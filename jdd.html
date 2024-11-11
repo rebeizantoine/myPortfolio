@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../portfolio-responsive-complete/assets/css/styles.css"
+    />
+    <link rel="stylesheet" href="vitalblood.css" />
+
+    <style>
+      /* Basic slider styles */
+      .image-slider {
+        position: relative;
+        width: 100%;
+
+        /* margin: 0 auto; */
+        overflow: hidden;
+      }
+
+      .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slider-wrapper img {
+        width: 100%;
+        flex-shrink: 0;
+      }
+
+      .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .nav-button.prev {
+        left: 10px;
+      }
+
+      .nav-button.next {
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="/index.html" class="nav__logo">Antoine Rebeiz</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projectoverview" class="nav__link">Project Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#techstack" class="nav__link">Tech Stack</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <div class="bloodproject">
+      <div class="arrow-div" onclick="window.location.href='jobblitz.html';"></div>
+      <h3>Next Project(Justanothersmm)</h3>
+      <img src="vitalbloodimages/arrow-right.svg" alt="" />
+    </div>
+      <div class="gradient-background">
+        <div class="topside">
+          <h1>JDD(Joanna Does Designs)</h1>
+          <h3>Online metal Artworks Shop</h3>
+        </div>
+
+        <!-- Image Slider Section -->
+        <div class="pilok">
+          <div class="image-slider">
+            <div class="slider-wrapper">
+              <img src="vitalbloodimages/JDD1.png" alt="Image 1" />
+              <img src="vitalbloodimages/JDD2.png" alt="Image 2" />
+              <img src="vitalbloodimages/JDD4.png" alt="Image 3" />
+              <img src="vitalbloodimages/JDD5.png" alt="Image 4" />
+            </div>
+            <button class="nav-button prev">❮</button>
+            <button class="nav-button next">❯</button>
+          </div>
+          <div class="image212">
+            <img src="vitalbloodimages/JDD-PHONE.png" alt="Mobile Screenshot" />
+          </div>
+
+          <div class="links-single">
+            <a
+              href="https://jddesigns.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Deployed Link
+            </a>
+            <a
+              href="vitalbloodimages/JDDTRIAL1.mp4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Video Demo
+            </a>
+          </div>
+
+          <div class="textblood">
+            <p>
+              Style your space with our custom steel designs! Choose from our
+              collection or create your own unique pieces.
+            </p>
+          </div>
+        </div>
+        <section class="project-details" id="projectoverview">
+          <div class="description">
+            <h2>Project Overview</h2>
+            <p>
+              JDDD is an online shop specializing in custom metal art works
+              where you can create your own unique designs. Our platform allows
+              you to style your space with bespoke steel creations. Choose from
+              our curated collection or craft one-of-a-kind pieces tailored to
+              your personal taste.
+            </p>
+            <p>
+              The site features a comprehensive suite of tools to enhance your
+              shopping experience, including:
+            </p>
+            <ul>
+              <li>
+                <strong>Order Handling:</strong> Efficient management and
+                tracking of your orders.
+              </li>
+              <li>
+                <strong>Cart:</strong> A convenient shopping cart for adding and
+                reviewing items before purchase.
+              </li>
+              <li>
+                <strong>Checkout Page:</strong> A secure and user-friendly
+                checkout process.
+              </li>
+              <li>
+                <strong>Dashboard:</strong> A robust dashboard for monitoring
+                and managing your orders and designs.
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-used" id="techstack">
+            <h2>Tech Stack</h2>
+            <ul>
+              <li>
+                <img
+                  src="./assets/img/html-5-svgrepo-com.svg"
+                  alt="HTML"
+                  class="tech-icon"
+                />
+                <span>HTML</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/css-svgrepo-com.svg"
+                  alt="CSS"
+                  class="tech-icon"
+                />
+                <span>CSS (Tailwind)</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/javascript-svgrepo-com.svg"
+                  alt="JavaScript"
+                  class="tech-icon"
+                />
+                <span>JavaScript (React.js)</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/mongodb-svgrepo-com.svg"
+                  alt="MongoDB"
+                  class="tech-icon"
+                />
+                <span>MongoDB</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/express-svgrepo-com.svg"
+                  alt="Express.js"
+                  class="tech-icon"
+                />
+                <span>Express.js</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/react-svgrepo-com.svg"
+                  alt="React"
+                  class="tech-icon"
+                />
+                <span>React</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/nodejs-svgrepo-com.svg"
+                  alt="Node.js"
+                  class="tech-icon"
+                />
+                <span>Node.js</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
+      const sliderWrapper = document.querySelector(".slider-wrapper");
+      const images = document.querySelectorAll(".slider-wrapper img");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        const totalImages = images.length;
+        if (index >= totalImages) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = totalImages - 1;
+        } else {
+          currentIndex = index;
+        }
+        const offset = -currentIndex * 100;
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+      }
+
+      prevButton.addEventListener("click", () => {
+        showSlide(currentIndex - 1);
+      });
+
+      nextButton.addEventListener("click", () => {
+        showSlide(currentIndex + 1);
+      });
+
+      showSlide(0);
+    </script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
