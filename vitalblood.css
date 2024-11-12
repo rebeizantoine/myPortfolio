@@ -737,7 +737,7 @@ img {
 
 .textblood {
   width: 1000px;
-  height: 200px;
+  height: 120px;
   color: #846f63;
   text-align: justify;
   font-feature-settings: "clig" off, "liga" off;
@@ -1280,5 +1280,20 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .pilok {
+      max-width: 100%;
+      left: 0px;
+    }
+    .image212 {
+      position: relative;
+      left: 280px;
+      top: -300px;
+      max-width: 300px;
+    }
+    .chinok {
+      height: 400px;
+    }
   }
 }
