@@ -1295,5 +1295,9 @@ img {
     .chinok {
       height: 400px;
     }
+    #techstack ul li:last-child {
+      position: relative;
+      left: 185px;
+    }
   }
 }
