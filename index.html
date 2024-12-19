@@ -247,7 +247,7 @@
         <h2 class="section-title">Download My Resume</h2>
         <div class="download__container bd-grid">
           <!-- Download button -->
-          <a href="assets/img/Antoine-Rebeiz-CV.pdf" class="button" download>
+          <a href="assets/img/Antoine RebeizCVwA.pdf" class="button" download>
             Download PDF
           </a>
         </div>
@@ -256,23 +256,52 @@
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
-
+      
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
-              class="contact__input"
-              placeholder="Message"
-            ></textarea>
+          <form id="contact-form" class="contact__form" onsubmit="sendMail(event)">
+            <input type="text" id="name" placeholder="Name" class="contact__input" required />
+            <input type="email" id="email" placeholder="Email" class="contact__input" required />
+            <textarea id="message" cols="0" rows="10" class="contact__input" placeholder="Message" required></textarea>
             <input type="submit" value="Send" class="contact__button button" />
           </form>
         </div>
       </section>
+    <!-- Include EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ 
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("0Ns0T4Z2XyQrNXUOU"); // Replace with your public key
+      })();
+    
+      function sendMail(event) {
+        event.preventDefault(); // Prevent the form from submitting
+    
+        // Get values from the form
+        let params = {
+          from_name: document.getElementById("name").value,   // Use the placeholder {{from_name}}
+          from_email: document.getElementById("email").value, // Use the placeholder {{from_email}}
+          message: document.getElementById("message").value,  // Use the placeholder {{message}}
+          to_name: "Antoine Rebeiz"  // Replace with your actual recipient name (for {{to_name}})
+        };
+    
+        // Send the email using EmailJS
+        emailjs.send("service_g3ew7ep", "template_g38mkqr", params)
+          .then(function(response) {
+            alert("Email sent successfully!");
+            console.log("SUCCESS:", response);
+            document.getElementById('contact-form').reset(); // Reset form after successful send
+          }, function(error) {
+            alert("Failed to send email. Please try again.");
+            console.log("FAILED:", error);
+          });
+      }
+    </script>
+    
+      
     </main>
 
     <!--===== FOOTER =====-->
@@ -291,5 +320,8 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
+    
+
   </body>
 </html>
