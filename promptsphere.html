@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromptSphere Project</title>
+    <link
+      rel="stylesheet"
+      href="../portfolio-responsive-complete/assets/css/styles.css"
+    />
+    <link rel="stylesheet" href="vitalblood.css" />
+
+    <style>
+      /* Basic slider styles */
+      .image-slider {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        overflow: hidden;
+      }
+
+      .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slider-wrapper img {
+        width: 100%;
+        flex-shrink: 0;
+      }
+
+      .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .nav-button.prev {
+        left: 10px;
+      }
+
+      .nav-button.next {
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="/index.html" class="nav__logo">Antoine Rebeiz</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projectoverview" class="nav__link">Project Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#techstack" class="nav__link">Tech Stack</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <div class="promptsphereproject">
+      <div
+        class="arrow-div"
+        onclick="window.location.href='Justanothersmm.html';"
+      >
+        <h3>Next Project (JustAnotherSMM)</h3>
+        <img src="promptsphereimages/arrow-right.svg" alt="arrow right" />
+      </div>
+
+      <div class="gradient-background">
+        <div class="topside">
+          <h1>PromptSphere</h1>
+          <h3>AI Multi-LLM Assistant SaaS</h3>
+        </div>
+
+        <!-- Image Slider Section -->
+        <div class="pilok">
+          <div class="chinok">
+            <div class="image-slider">
+              <div class="slider-wrapper">
+                <img
+                  src="vitalbloodimages/PROMPT1.png"
+                  alt="PromptSphere Screenshot 1"
+                />
+                <img
+                  src="vitalbloodimages/PROMPT2.png"
+                  alt="PromptSphere Screenshot 2"
+                />
+                <img
+                  src="vitalbloodimages/PROMPT3.png"
+                  alt="PromptSphere Screenshot 3"
+                />
+                <img
+                  src="vitalbloodimages/PROMPT4.png"
+                  alt="PromptSphere Screenshot 4"
+                />
+              </div>
+              <button class="nav-button prev">❮</button>
+              <button class="nav-button next">❯</button>
+            </div>
+            <div class="image212">
+              <img
+                src="vitalbloodimages/PROMPT-PHONE.png"
+                alt="PromptSphere Mobile Screenshot"
+              />
+            </div>
+          </div>
+
+          <div class="links-single">
+            <a
+              href="https://promptsphere.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Deployed Link
+            </a>
+            <a
+              href="vitalbloodimages/promptsphereVideo.mp4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Video Demo
+            </a>
+          </div>
+
+          <div class="textblood">
+            <p>
+              Experience PromptSphere — a cutting-edge AI assistant leveraging
+              multiple LLMs to give you the best answers, document generators,
+              and more.
+            </p>
+          </div>
+        </div>
+        <section class="project-details" id="projectoverview">
+          <div class="description">
+            <h2>Project Overview</h2>
+            <p>
+              PromptSphere is an advanced AI SaaS platform integrating multiple
+              LLMs to provide semantic search, document generation (PDF, Excel),
+              CSV data analysis, email generation, and daily coding exercises.
+              It is designed for developers and businesses looking for powerful
+              AI assistance.
+            </p>
+            <p>Features include:</p>
+            <ul>
+              <li>
+                <strong>Multi-LLM Querying:</strong> Queries 3 AI models and
+                returns the best response.
+              </li>
+              <li>
+                <strong>Document Generators:</strong> Generate PDFs and Excel
+                files with customizable parameters.
+              </li>
+              <li>
+                <strong>CSV Data Analysis:</strong> Upload CSVs and ask
+                insightful questions about your data.
+              </li>
+              <li>
+                <strong>Email Generator:</strong> Generate professional emails
+                with AI assistance.
+              </li>
+              <li>
+                <strong>Daily Coding Exercises:</strong> Practice coding
+                challenges generated daily.
+              </li>
+            </ul>
+          </div>
+
+          <div class="stack-used" id="techstack">
+            <h2>Tech Stack</h2>
+            <ul>
+              <li>
+                <img
+                  src="./assets/img/react-svgrepo-com.svg"
+                  alt="React"
+                  class="tech-icon"
+                />
+                <span>React</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/next-logo.png"
+                  alt="Next.js"
+                  class="tech-icon"
+                />
+                <span>Next.js</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/nodejs-svgrepo-com.svg"
+                  alt="Node.js"
+                  class="tech-icon"
+                />
+                <span>Node.js</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/express-svgrepo-com.svg"
+                  alt="Express.js"
+                  class="tech-icon"
+                />
+                <span>Express.js</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/mongodb-svgrepo-com.svg"
+                  alt="MongoDB"
+                  class="tech-icon"
+                />
+                <span>MongoDB</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/tailwind-logo.png"
+                  alt="Tailwind CSS"
+                  class="tech-icon"
+                />
+                <span>Tailwind CSS</span>
+              </li>
+
+              <!-- New tech stack items -->
+              <li>
+                <img
+                  src="./assets/img/typescript-logo.png"
+                  alt="TypeScript"
+                  class="tech-icon"
+                />
+                <span>TypeScript</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/prisma-logo.png"
+                  alt="Prisma"
+                  class="tech-icon"
+                />
+                <span>Prisma</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/aws-logo.png"
+                  alt="AWS"
+                  class="tech-icon"
+                />
+                <span>AWS Cloud</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/chatgpt-logo.png"
+                  alt="OpenAI"
+                  class="tech-icon"
+                />
+                <span>OpenAI API</span>
+              </li>
+              <li>
+                <img src="./assets/img/docker-logo.png" class="tech-icon" />
+                <span>Docker</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
+      const sliderWrapper = document.querySelector(".slider-wrapper");
+      const images = document.querySelectorAll(".slider-wrapper img");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        const totalImages = images.length;
+        if (index >= totalImages) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = totalImages - 1;
+        } else {
+          currentIndex = index;
+        }
+        const offset = -currentIndex * 100;
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+      }
+
+      prevButton.addEventListener("click", () => {
+        showSlide(currentIndex - 1);
+      });
+
+      nextButton.addEventListener("click", () => {
+        showSlide(currentIndex + 1);
+      });
+
+      showSlide(0);
+    </script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
