@@ -328,6 +328,7 @@ img {
   width: 100%;
   transition: transform 1s;
   display: block;
+  height: 200px;
 }
 
 .work__img img:hover {
