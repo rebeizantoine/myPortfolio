@@ -217,6 +217,9 @@ img {
   color: #846f63;
   font-family: Poppins;
 }
+.stack-used li:last-child:nth-child(3n + 1) {
+  grid-column: 2; /* push it into the middle column */
+}
 .slider-wrapper img {
   border: 2px solid grey;
   /* width: fit-content !important; */
@@ -1171,6 +1174,11 @@ img {
   }
   .home__img {
     width: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .topside h1 {
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 576px) {
