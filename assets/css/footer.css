@@ -1,0 +1,97 @@
+/* ==========================================================================
+   MAIN PORTFOLIO FOOTER STYLES (footer.css)
+   ========================================================================== */
+
+/* --- CSS Variables (Falls back gracefully if not defined in main stylesheet) --- */
+:root {
+  --footer-bg: #0e2431;
+  --footer-text-primary: #ffffff;
+  --footer-text-secondary: #94a3b8;
+  --footer-accent: #4070f4;
+  --footer-accent-hover: #2952d3;
+}
+
+/* --- Footer Container --- */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text-primary);
+  padding: 3.5rem 1.5rem 2rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer__container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* --- Typography --- */
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--footer-text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.footer__subtitle {
+  font-size: 0.9rem;
+  color: var(--footer-text-secondary);
+  margin-top: -0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Social Links --- */
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--footer-text-primary);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.footer__icon:hover {
+  background: var(--footer-accent);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(64, 112, 244, 0.35);
+}
+
+.footer__icon:active {
+  transform: translateY(-1px);
+}
+
+/* --- Copyright & Legal --- */
+.footer__copy {
+  font-size: 0.85rem;
+  color: var(--footer-text-secondary);
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+  width: 100%;
+}
+
+/* --- Optional Responsive Row Adjustment --- */
+@media screen and (min-width: 768px) {
+  .footer__copy {
+    width: 80%;
+  }
+}

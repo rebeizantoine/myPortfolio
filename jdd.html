@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <!-- PAGE TITLE -->
     <title>Antoine Rebeiz • JDD Project</title>
 
-    <!-- FAVICON (kept as is) -->
+    <!-- FAVICON -->
     <link
       rel="icon"
       type="image/png"
@@ -20,55 +20,16 @@
       href="../portfolio-responsive-complete/assets/css/styles.css"
     />
     <link rel="stylesheet" href="vitalblood.css" />
+    <link rel="stylesheet" href="assets/css/jdd-redesign.css" />
 
     <!-- BOX ICONS -->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- INLINE STYLES (SLIDER) -->
-    <style>
-      /* Basic slider styles */
-      .image-slider {
-        position: relative;
-        width: 100%;
-        max-width: 600px;
-        overflow: hidden;
-      }
-
-      .slider-wrapper {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .slider-wrapper img {
-        width: 100%;
-        flex-shrink: 0;
-      }
-
-      .nav-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-      }
-
-      .nav-button.prev {
-        left: 10px;
-      }
-
-      .nav-button.next {
-        right: 10px;
-      }
-    </style>
   </head>
   <body>
+    <!-- HEADER NAV -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
@@ -78,19 +39,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="/index.html" class="nav__link active-link">Home</a>
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#projectoverview" class="nav__link">Project Overview</a>
+              <a href="#overview" class="nav__link active-link">Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
               <a href="#techstack" class="nav__link">Tech Stack</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="/index.html#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -100,194 +61,218 @@
         </div>
       </nav>
     </header>
-    <div class="bloodproject">
-      <div
-        class="arrow-div"
-        onclick="window.location.href='BridgingBrushes.html';"
-      >
-        <h3>Next Project(BridgingBrushes)</h3>
-        <img src="vitalbloodimages/arrow-right.svg" alt="" />
+
+    <main class="jdd-page bd-grid">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="jdd-nav-bar">
+        <a href="Justanothersmm.html" class="jdd-back-btn">
+          <i class="bx bx-left-arrow-alt"></i> Back: JustAnotherSMM
+        </a>
+        <a href="BridgingBrushes.html" class="jdd-next-btn">
+          Next: BridgingBrushes <i class="bx bx-right-arrow-alt"></i>
+        </a>
       </div>
 
-      <div class="gradient-background">
-        <div class="topside">
-          <h1>JDD(Joanna Does Designs)</h1>
-          <h3>Online metal Artworks Shop</h3>
-        </div>
-
-        <!-- Image Slider Section -->
-        <div class="pilok">
-          <div class="chinok">
-            <div class="image-slider">
-              <div class="slider-wrapper">
-                <img src="vitalbloodimages/JDD1.png" alt="Image 1" />
-                <img src="vitalbloodimages/JDD2.png" alt="Image 2" />
-                <img src="vitalbloodimages/JDD4.png" alt="Image 3" />
-                <img src="vitalbloodimages/JDD5.png" alt="Image 4" />
-              </div>
-              <button class="nav-button prev">❮</button>
-              <button class="nav-button next">❯</button>
-            </div>
-            <div class="image212">
-              <img
-                src="vitalbloodimages/JDD-PHONE.png"
-                alt="Mobile Screenshot"
-              />
-            </div>
+      <!-- HERO SECTION -->
+      <section class="jdd-hero" id="overview">
+        <div class="jdd-hero__content">
+          <div class="jdd-hero__badge">
+            <i class="bx bx-store"></i> Custom Steel Art Store
           </div>
+          <h1 class="jdd-hero__title">JDD (Joanna Does Designs)</h1>
+          <p class="jdd-hero__subtitle">
+            Style your space with custom steel artworks. JDD is an online metal
+            art shop enabling customers to select from curated designs or
+            request one-of-a-kind, bespoke steel creations.
+          </p>
 
-          <div class="links-single">
+          <div class="jdd-hero__actions">
             <a
               href="https://jddesigns.onrender.com"
               target="_blank"
               rel="noopener noreferrer"
+              class="jdd-btn jdd-btn--primary"
             >
-              Deployed Link
+              <i class="bx bx-globe"></i> Live Application
             </a>
             <a
               href="vitalbloodimages/JDDTRIAL1.mp4"
               target="_blank"
               rel="noopener noreferrer"
+              class="jdd-btn jdd-btn--secondary"
             >
-              Video Demo
+              <i class="bx bx-play-circle"></i> Watch Video Demo
             </a>
           </div>
+        </div>
 
-          <div class="textblood">
+        <!-- MOCKUP BROWSER CAROUSEL CARD -->
+        <div class="jdd-hero__media">
+          <div class="jdd-mockup-card">
+            <div class="jdd-mockup-header">
+              <div class="jdd-mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="jdd-mockup-title">JDD E-Commerce Platform</span>
+            </div>
+
+            <div class="jdd-carousel" id="jddCarousel">
+              <div class="jdd-carousel-track" id="jddCarouselTrack">
+                <div class="jdd-carousel-slide">
+                  <img src="vitalbloodimages/JDD1.png" alt="JDD Screen 1" />
+                </div>
+                <div class="jdd-carousel-slide">
+                  <img src="vitalbloodimages/JDD2.png" alt="JDD Screen 2" />
+                </div>
+                <div class="jdd-carousel-slide">
+                  <img src="vitalbloodimages/JDD4.png" alt="JDD Screen 3" />
+                </div>
+                <div class="jdd-carousel-slide">
+                  <img src="vitalbloodimages/JDD5.png" alt="JDD Screen 4" />
+                </div>
+              </div>
+              <button
+                class="jdd-carousel-btn jdd-prev"
+                id="jddPrevBtn"
+                aria-label="Previous"
+              >
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                class="jdd-carousel-btn jdd-next"
+                id="jddNextBtn"
+                aria-label="Next"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY FEATURES GRID -->
+      <section class="jdd-section" id="features">
+        <h2 class="section-title">Store Features</h2>
+        <div class="jdd-features-grid">
+          <div class="jdd-feature-card">
+            <div class="jdd-feature-card__icon">
+              <i class="bx bx-package"></i>
+            </div>
+            <h3>Order Handling</h3>
             <p>
-              Style your space with our custom steel designs! Choose from our
-              collection or create your own unique pieces.
+              Automated workflows for processing custom artwork choices and
+              tracking delivery lifecycle states.
+            </p>
+          </div>
+
+          <div class="jdd-feature-card">
+            <div class="jdd-feature-card__icon">
+              <i class="bx bx-shopping-bag"></i>
+            </div>
+            <h3>Shopping Cart</h3>
+            <p>
+              Dynamic slide-out cart allowing easy product review and quantity
+              adjustments prior to checkout.
+            </p>
+          </div>
+
+          <div class="jdd-feature-card">
+            <div class="jdd-feature-card__icon">
+              <i class="bx bx-credit-card"></i>
+            </div>
+            <h3>Checkout Experience</h3>
+            <p>
+              Streamlined payment process designed to reduce drop-offs and
+              collect customization directives.
+            </p>
+          </div>
+
+          <div class="jdd-feature-card">
+            <div class="jdd-feature-card__icon">
+              <i class="bx bx-tachometer"></i>
+            </div>
+            <h3>Admin Dashboard</h3>
+            <p>
+              Management console for managing incoming steel orders, sales
+              metrics, and catalog inventory.
             </p>
           </div>
         </div>
-        <section class="project-details" id="projectoverview">
-          <div class="description">
-            <h2>Project Overview</h2>
-            <p>
-              JDDD is an online shop specializing in custom metal art works
-              where you can create your own unique designs. Our platform allows
-              you to style your space with bespoke steel creations. Choose from
-              our curated collection or craft one-of-a-kind pieces tailored to
-              your personal taste.
-            </p>
-            <p>
-              The site features a comprehensive suite of tools to enhance your
-              shopping experience, including:
-            </p>
-            <ul>
-              <li>
-                <strong>Order Handling:</strong> Efficient management and
-                tracking of your orders.
-              </li>
-              <li>
-                <strong>Cart:</strong> A convenient shopping cart for adding and
-                reviewing items before purchase.
-              </li>
-              <li>
-                <strong>Checkout Page:</strong> A secure and user-friendly
-                checkout process.
-              </li>
-              <li>
-                <strong>Dashboard:</strong> A robust dashboard for monitoring
-                and managing your orders and designs.
-              </li>
-            </ul>
-          </div>
+      </section>
 
-          <div class="stack-used" id="techstack">
-            <h2>Tech Stack</h2>
-            <ul>
-              <li>
-                <img
-                  src="./assets/img/html-5-svgrepo-com.svg"
-                  alt="HTML"
-                  class="tech-icon"
-                />
-                <span>HTML</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/css-svgrepo-com.svg"
-                  alt="CSS"
-                  class="tech-icon"
-                />
-                <span>CSS (Tailwind)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/javascript-svgrepo-com.svg"
-                  alt="JavaScript"
-                  class="tech-icon"
-                />
-                <span>JavaScript (React.js)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/mongodb-svgrepo-com.svg"
-                  alt="MongoDB"
-                  class="tech-icon"
-                />
-                <span>MongoDB</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/express-svgrepo-com.svg"
-                  alt="Express.js"
-                  class="tech-icon"
-                />
-                <span>Express.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/react-svgrepo-com.svg"
-                  alt="React"
-                  class="tech-icon"
-                />
-                <span>React</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/nodejs-svgrepo-com.svg"
-                  alt="Node.js"
-                  class="tech-icon"
-                />
-                <span>Node.js</span>
-              </li>
-            </ul>
+      <!-- TECH STACK SHOWCASE -->
+      <section class="jdd-section" id="techstack">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="jdd-tech-grid">
+          <div class="jdd-tech-pill">
+            <img src="./assets/img/html-5-svgrepo-com.svg" alt="HTML" /><span
+              >HTML5</span
+            >
           </div>
-        </section>
-      </div>
-    </div>
+          <div class="jdd-tech-pill">
+            <img src="./assets/img/css-svgrepo-com.svg" alt="CSS" /><span
+              >CSS / Tailwind</span
+            >
+          </div>
+          <div class="jdd-tech-pill">
+            <img
+              src="./assets/img/javascript-svgrepo-com.svg"
+              alt="JavaScript"
+            /><span>JavaScript</span>
+          </div>
+          <div class="jdd-tech-pill">
+            <img src="./assets/img/react-svgrepo-com.svg" alt="React" /><span
+              >React.js</span
+            >
+          </div>
+          <div class="jdd-tech-pill">
+            <img src="./assets/img/nodejs-svgrepo-com.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+          <div class="jdd-tech-pill">
+            <img
+              src="./assets/img/express-svgrepo-com.svg"
+              alt="Express.js"
+            /><span>Express.js</span>
+          </div>
+          <div class="jdd-tech-pill">
+            <img
+              src="./assets/img/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            /><span>MongoDB</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- ISOLATED CAROUSEL SCRIPT -->
     <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-      const images = document.querySelectorAll(".slider-wrapper img");
-      let currentIndex = 0;
+      (function () {
+        const track = document.getElementById("jddCarouselTrack");
+        const prevBtn = document.getElementById("jddPrevBtn");
+        const nextBtn = document.getElementById("jddNextBtn");
+        const slides = document.querySelectorAll(".jdd-carousel-slide");
+        let currentIndex = 0;
 
-      function showSlide(index) {
-        const totalImages = images.length;
-        if (index >= totalImages) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalImages - 1;
-        } else {
-          currentIndex = index;
+        function updateSlider(index) {
+          if (index >= slides.length) currentIndex = 0;
+          else if (index < 0) currentIndex = slides.length - 1;
+          else currentIndex = index;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-        const offset = -currentIndex * 100;
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-      }
 
-      prevButton.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      showSlide(0);
+        if (prevBtn && nextBtn && track) {
+          prevBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex - 1);
+          });
+          nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex + 1);
+          });
+        }
+      })();
     </script>
     <script src="./assets/js/main.js"></script>
   </body>

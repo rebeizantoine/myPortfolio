@@ -1,0 +1,209 @@
+/* ==========================================================================
+   WORK / PROJECTS SECTION (assets/css/work.css)
+   ========================================================================== */
+
+/* Outer Grid Wrapper (Aligned with Skills & Awards) */
+.work__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 650px) {
+  .work__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .work__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Card Base Styling --- */
+.work__card {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0; /* Clear outer card border */
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.work__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(14, 36, 49, 0.12);
+  border-color: #cbd5e1;
+}
+
+/* --- Featured Card Layout --- */
+@media screen and (min-width: 650px) {
+  .work__card--featured {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .work__card--featured {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+
+  .work__card--featured .work__img-wrapper {
+    height: 100%;
+    min-height: 280px;
+    border-bottom: none;
+    border-right: 1px solid #e2e8f0; /* Separator for featured side-by-side layout */
+  }
+}
+
+/* --- Image Container & Frame Styling --- */
+.work__img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: block;
+  background-color: #f1f5f9; /* Off-white tint behind images */
+  border-bottom: 1px solid #e2e8f0; /* Bottom border separating image from text */
+}
+
+/* Mock Browser Header Line for Screenshot Definition */
+.work__img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #e2e8f0;
+  z-index: 2;
+}
+
+.work__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.work__card:hover .work__img {
+  transform: scale(1.05);
+}
+
+/* --- Badges & Overlays --- */
+.work__badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--first-color, #4070f4);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 3;
+  box-shadow: 0 4px 12px rgba(64, 112, 244, 0.3);
+}
+
+.work__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 36, 49, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.work__card:hover .work__overlay {
+  opacity: 1;
+}
+
+.work__button {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* --- Card Content Details --- */
+.work__content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.work__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.work__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--second-color, #0e2431);
+}
+
+.work__link {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.work__link:hover {
+  color: var(--first-color, #4070f4);
+}
+
+.work__description {
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+/* --- Tech Tags --- */
+.work__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.work__tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--first-color, #4070f4);
+  background-color: hsl(var(--hue-color, 224), 89%, 96%);
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.35rem;
+}

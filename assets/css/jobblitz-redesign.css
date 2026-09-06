@@ -1,0 +1,308 @@
+/* ==========================================================================
+   JOBBLITZ PAGE STYLES (jobblitz-redesign.css)
+   ========================================================================== */
+
+.jobblitz-page {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+/* --- Top Navigation --- */
+.jobblitz-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.jobblitz-back-btn,
+.jobblitz-next-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.jobblitz-back-btn:hover,
+.jobblitz-next-btn:hover {
+  color: var(--first-color, #4070f4);
+}
+
+/* --- Hero Layout --- */
+.jobblitz-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 850px) {
+  .jobblitz-hero {
+    grid-template-columns: 1fr 1.1fr;
+  }
+}
+
+.jobblitz-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  background: hsl(var(--hue-color, 224), 89%, 95%);
+  color: var(--first-color, #4070f4);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.jobblitz-hero__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--second-color, #0e2431);
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.jobblitz-hero__subtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.jobblitz-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.jobblitz-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.jobblitz-btn--primary {
+  background-color: var(--first-color, #4070f4);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(64, 112, 244, 0.35);
+}
+
+.jobblitz-btn--secondary {
+  background-color: #ffffff;
+  color: var(--second-color, #0e2431);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.jobblitz-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* --- Hero Media Container --- */
+.jobblitz-hero__media {
+  width: 100%;
+  max-width: 100%;
+}
+
+.jobblitz-mockup-card {
+  background: #ffffff !important;
+  border-radius: 1rem !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 12px 32px rgba(14, 36, 49, 0.08) !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.jobblitz-mockup-header {
+  background: #f8fafc !important;
+  padding: 0.75rem 1rem !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+.jobblitz-mockup-dots {
+  display: flex !important;
+  gap: 6px !important;
+}
+
+.jobblitz-mockup-dots span {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #cbd5e1 !important;
+}
+
+.jobblitz-mockup-title {
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: #94a3b8 !important;
+}
+
+/* --- ISOLATED CAROUSEL --- */
+.jobblitz-carousel {
+  position: relative !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000000 !important;
+}
+
+.jobblitz-carousel-track {
+  display: flex !important;
+  width: 100% !important;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.jobblitz-carousel-slide {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  flex-shrink: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.jobblitz-carousel-slide img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  transform: scale(1.025) !important; /* Crops out dark screenshot edges */
+}
+
+/* Controls */
+.jobblitz-carousel-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+  color: #0e2431 !important;
+  font-size: 1.4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  z-index: 20 !important;
+  transition: background 0.2s ease !important;
+}
+
+.jobblitz-carousel-btn:hover {
+  background: #ffffff !important;
+}
+
+.jobblitz-carousel-btn.jobblitz-prev {
+  left: 12px !important;
+}
+
+.jobblitz-carousel-btn.jobblitz-next {
+  right: 12px !important;
+}
+
+/* --- Section Formatting --- */
+.jobblitz-section {
+  margin-bottom: 4rem;
+}
+
+.jobblitz-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.jobblitz-feature-card {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 0.85rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(14, 36, 49, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.jobblitz-feature-card:hover {
+  transform: translateY(-3px);
+}
+
+.jobblitz-feature-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 0.6rem;
+  background: hsl(var(--hue-color, 224), 89%, 95%);
+  color: var(--first-color, #4070f4);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.jobblitz-feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--second-color, #0e2431);
+  margin-bottom: 0.5rem;
+}
+
+.jobblitz-feature-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.jobblitz-tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.jobblitz-tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1.1rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.jobblitz-tech-pill img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.jobblitz-tech-pill span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--second-color, #0e2431);
+}

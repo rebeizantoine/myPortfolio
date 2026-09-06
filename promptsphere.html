@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- PAGE TITLE -->
-    <title>Antoine Rebeiz • PromptSphere Project</title>
+    <title>Antoine Rebeiz • PromptSphere</title>
 
     <!-- FAVICON -->
     <link
@@ -20,54 +20,16 @@
       href="../portfolio-responsive-complete/assets/css/styles.css"
     />
     <link rel="stylesheet" href="vitalblood.css" />
+    <link rel="stylesheet" href="./assets//css/project-redesign.css" />
 
     <!-- BOX ICONS -->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- INLINE STYLES FOR IMAGE SLIDER -->
-    <style>
-      .image-slider {
-        position: relative;
-        width: 100%;
-        max-width: 600px;
-        overflow: hidden;
-      }
-
-      .slider-wrapper {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .slider-wrapper img {
-        width: 100%;
-        flex-shrink: 0;
-      }
-
-      .nav-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-      }
-
-      .nav-button.prev {
-        left: 10px;
-      }
-
-      .nav-button.next {
-        right: 10px;
-      }
-    </style>
   </head>
   <body>
+    <!-- HEADER NAV -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
@@ -77,19 +39,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="/index.html" class="nav__link active-link">Home</a>
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#projectoverview" class="nav__link">Project Overview</a>
+              <a href="#overview" class="nav__link active-link">Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
               <a href="#techstack" class="nav__link">Tech Stack</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="/index.html#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -99,238 +61,267 @@
         </div>
       </nav>
     </header>
-    <div class="promptsphereproject">
-      <div
-        class="arrow-div"
-        onclick="window.location.href = 'Justanothersmm.html'"
-      >
-        <h3>Next Project (JustAnotherSMM)</h3>
-        <img src="promptsphereimages/arrow-right.svg" alt="arrow right" />
+
+    <main class="ps-page bd-grid">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="ps-nav-bar">
+        <a href="/index.html#work" class="ps-back-btn">
+          <i class="bx bx-left-arrow-alt"></i> Back to Portfolio
+        </a>
+        <a href="Justanothersmm.html" class="ps-next-btn">
+          Next: JustAnotherSMM <i class="bx bx-right-arrow-alt"></i>
+        </a>
       </div>
 
-      <div class="gradient-background">
-        <div class="topside">
-          <h1>PromptSphere</h1>
-          <h3>AI Multi-LLM Assistant SaaS</h3>
-        </div>
-
-        <!-- Image Slider Section -->
-        <div class="pilok">
-          <div class="chinok">
-            <div class="image-slider">
-              <div class="slider-wrapper">
-                <img
-                  src="vitalbloodimages/PROMPT1.png"
-                  alt="PromptSphere Screenshot 1"
-                />
-                <img
-                  src="vitalbloodimages/PROMPT2.png"
-                  alt="PromptSphere Screenshot 2"
-                />
-                <img
-                  src="vitalbloodimages/PROMPT3.png"
-                  alt="PromptSphere Screenshot 3"
-                />
-                <img
-                  src="vitalbloodimages/PROMPT4.png"
-                  alt="PromptSphere Screenshot 4"
-                />
-              </div>
-              <button class="nav-button prev">❮</button>
-              <button class="nav-button next">❯</button>
-            </div>
-            <div class="image212">
-              <img
-                src="vitalbloodimages/PROMPT-PHONE.png"
-                alt="PromptSphere Mobile Screenshot"
-              />
-            </div>
+      <!-- HERO SECTION -->
+      <section class="ps-hero" id="overview">
+        <div class="ps-hero__content">
+          <div class="ps-hero__badge">
+            <i class="bx bx-bot"></i> AI Multi-LLM Assistant SaaS
           </div>
+          <h1 class="ps-hero__title">PromptSphere</h1>
+          <p class="ps-hero__subtitle">
+            An advanced AI SaaS platform integrating multiple LLMs to deliver
+            multi-model consensus querying, real-time document creation, CSV
+            analysis, and automated developer utilities.
+          </p>
 
-          <div class="links-single">
+          <div class="ps-hero__actions">
             <a
               href="https://promptsphere.onrender.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
+              class="ps-btn ps-btn--primary"
             >
-              Deployed Link
+              <i class="bx bx-globe"></i> Live Application
             </a>
             <a
               href="vitalbloodimages/promptsphereVideo.mp4"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
+              class="ps-btn ps-btn--secondary"
             >
-              Video Demo
+              <i class="bx bx-play-circle"></i> Watch Video Demo
             </a>
           </div>
+        </div>
 
-          <div class="textblood">
+        <!-- MOCKUP BROWSER CAROUSEL CARD -->
+        <div class="ps-hero__media">
+          <div class="ps-mockup-card">
+            <div class="ps-mockup-header">
+              <div class="ps-mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="ps-mockup-title">PromptSphere Desktop Platform</span>
+            </div>
+
+            <div class="ps-carousel" id="psCarousel">
+              <div class="ps-carousel-track" id="psCarouselTrack">
+                <div class="ps-carousel-slide">
+                  <img
+                    src="vitalbloodimages/PROMPT1.png"
+                    alt="PromptSphere Screen 1"
+                  />
+                </div>
+                <div class="ps-carousel-slide">
+                  <img
+                    src="vitalbloodimages/PROMPT2.png"
+                    alt="PromptSphere Screen 2"
+                  />
+                </div>
+                <div class="ps-carousel-slide">
+                  <img
+                    src="vitalbloodimages/PROMPT3.png"
+                    alt="PromptSphere Screen 3"
+                  />
+                </div>
+                <div class="ps-carousel-slide">
+                  <img
+                    src="vitalbloodimages/PROMPT4.png"
+                    alt="PromptSphere Screen 4"
+                  />
+                </div>
+              </div>
+              <button
+                class="ps-carousel-btn ps-prev"
+                id="psPrevBtn"
+                aria-label="Previous"
+              >
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                class="ps-carousel-btn ps-next"
+                id="psNextBtn"
+                aria-label="Next"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY FEATURES GRID -->
+      <section class="ps-section" id="features">
+        <h2 class="section-title">Core Capabilities</h2>
+        <div class="ps-features-grid">
+          <div class="ps-feature-card">
+            <div class="ps-feature-card__icon">
+              <i class="bx bx-git-repo-forked"></i>
+            </div>
+            <h3>Multi-LLM Querying</h3>
             <p>
-              Experience PromptSphere — a cutting-edge AI assistant leveraging
-              multiple LLMs to give you the best answers, document generators,
-              and more.
+              Queries 3 AI models concurrently to analyze perspectives and
+              return the highest accuracy response.
+            </p>
+          </div>
+
+          <div class="ps-feature-card">
+            <div class="ps-feature-card__icon"><i class="bx bx-file"></i></div>
+            <h3>Document Generators</h3>
+            <p>
+              Export structured PDF and Excel documents dynamically generated
+              from user inputs.
+            </p>
+          </div>
+
+          <div class="ps-feature-card">
+            <div class="ps-feature-card__icon"><i class="bx bx-table"></i></div>
+            <h3>CSV Data Analysis</h3>
+            <p>
+              Upload raw CSV files to conduct conversational data analysis and
+              extract rapid insights.
+            </p>
+          </div>
+
+          <div class="ps-feature-card">
+            <div class="ps-feature-card__icon">
+              <i class="bx bx-envelope"></i>
+            </div>
+            <h3>Smart Email Generator</h3>
+            <p>
+              Generate context-aware professional communication and emails with
+              custom tones.
+            </p>
+          </div>
+
+          <div class="ps-feature-card">
+            <div class="ps-feature-card__icon">
+              <i class="bx bx-code-alt"></i>
+            </div>
+            <h3>Daily Coding Challenges</h3>
+            <p>
+              Automated algorithm practice questions and code evaluations
+              generated daily.
+            </p>
+          </div>
+
+          <div class="ps-feature-card">
+            <div class="ps-feature-card__icon">
+              <i class="bx bx-mobile-alt"></i>
+            </div>
+            <h3>Responsive UI Design</h3>
+            <p>
+              Tailored layouts providing continuous feature access across mobile
+              and desktop interfaces.
             </p>
           </div>
         </div>
-        <section class="project-details" id="projectoverview">
-          <div class="description">
-            <h2>Project Overview</h2>
-            <p>
-              PromptSphere is an advanced AI SaaS platform integrating multiple
-              LLMs to provide semantic search, document generation (PDF, Excel),
-              CSV data analysis, email generation, and daily coding exercises.
-              It is designed for developers and businesses looking for powerful
-              AI assistance.
-            </p>
-            <p>Features include:</p>
-            <ul>
-              <li>
-                <strong>Multi-LLM Querying:</strong> Queries 3 AI models and
-                returns the best response.
-              </li>
-              <li>
-                <strong>Document Generators:</strong> Generate PDFs and Excel
-                files with customizable parameters.
-              </li>
-              <li>
-                <strong>CSV Data Analysis:</strong> Upload CSVs and ask
-                insightful questions about your data.
-              </li>
-              <li>
-                <strong>Email Generator:</strong> Generate professional emails
-                with AI assistance.
-              </li>
-              <li>
-                <strong>Daily Coding Exercises:</strong> Practice coding
-                challenges generated daily.
-              </li>
-            </ul>
+      </section>
+
+      <!-- TECH STACK SHOWCASE -->
+      <section class="ps-section" id="techstack">
+        <h2 class="section-title">Tech Stack & Infrastructure</h2>
+        <div class="ps-tech-grid">
+          <div class="ps-tech-pill">
+            <img src="./assets/img/react-svgrepo-com.svg" alt="React" /><span
+              >React</span
+            >
           </div>
-
-          <div class="stack-used" id="techstack">
-            <h2>Tech Stack</h2>
-            <ul>
-              <li>
-                <img
-                  src="./assets/img/react-svgrepo-com.svg"
-                  alt="React"
-                  class="tech-icon"
-                />
-                <span>React</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/next-logo.png"
-                  alt="Next.js"
-                  class="tech-icon"
-                />
-                <span>Next.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/nodejs-svgrepo-com.svg"
-                  alt="Node.js"
-                  class="tech-icon"
-                />
-                <span>Node.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/express-svgrepo-com.svg"
-                  alt="Express.js"
-                  class="tech-icon"
-                />
-                <span>Express.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/mongodb-svgrepo-com.svg"
-                  alt="MongoDB"
-                  class="tech-icon"
-                />
-                <span>MongoDB</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/tailwind-logo.png"
-                  alt="Tailwind CSS"
-                  class="tech-icon"
-                />
-                <span>Tailwind CSS</span>
-              </li>
-
-              <!-- New tech stack items -->
-              <li>
-                <img
-                  src="./assets/img/typescript-logo.png"
-                  alt="TypeScript"
-                  class="tech-icon"
-                />
-                <span>TypeScript</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/prisma-logo.png"
-                  alt="Prisma"
-                  class="tech-icon"
-                />
-                <span>Prisma</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/aws-logo.png"
-                  alt="AWS"
-                  class="tech-icon"
-                />
-                <span>AWS Cloud</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/chatgpt-logo.png"
-                  alt="OpenAI"
-                  class="tech-icon"
-                />
-                <span>OpenAI API</span>
-              </li>
-              <li>
-                <img src="./assets/img/docker-logo.png" class="tech-icon" />
-                <span>Docker</span>
-              </li>
-            </ul>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/next-logo.png" alt="Next.js" /><span
+              >Next.js</span
+            >
           </div>
-        </section>
-      </div>
-    </div>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/typescript-logo.png" alt="TypeScript" /><span
+              >TypeScript</span
+            >
+          </div>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/nodejs-svgrepo-com.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+          <div class="ps-tech-pill">
+            <img
+              src="./assets/img/express-svgrepo-com.svg"
+              alt="Express"
+            /><span>Express.js</span>
+          </div>
+          <div class="ps-tech-pill">
+            <img
+              src="./assets/img/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            /><span>MongoDB</span>
+          </div>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/prisma-logo.png" alt="Prisma" /><span
+              >Prisma</span
+            >
+          </div>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/tailwind-logo.png" alt="Tailwind" /><span
+              >Tailwind CSS</span
+            >
+          </div>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/chatgpt-logo.png" alt="OpenAI" /><span
+              >OpenAI API</span
+            >
+          </div>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/aws-logo.png" alt="AWS" /><span
+              >AWS Cloud</span
+            >
+          </div>
+          <div class="ps-tech-pill">
+            <img src="./assets/img/docker-logo.png" alt="Docker" /><span
+              >Docker</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- ISOLATED CAROUSEL SCRIPT -->
     <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-      const images = document.querySelectorAll(".slider-wrapper img");
-      let currentIndex = 0;
+      (function () {
+        const track = document.getElementById("psCarouselTrack");
+        const prevBtn = document.getElementById("psPrevBtn");
+        const nextBtn = document.getElementById("psNextBtn");
+        const slides = document.querySelectorAll(".ps-carousel-slide");
+        let currentIndex = 0;
 
-      function showSlide(index) {
-        const totalImages = images.length;
-        if (index >= totalImages) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalImages - 1;
-        } else {
-          currentIndex = index;
+        function updateSlider(index) {
+          if (index >= slides.length) currentIndex = 0;
+          else if (index < 0) currentIndex = slides.length - 1;
+          else currentIndex = index;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-        const offset = -currentIndex * 100;
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-      }
 
-      prevButton.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      showSlide(0);
+        if (prevBtn && nextBtn && track) {
+          prevBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex - 1);
+          });
+          nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex + 1);
+          });
+        }
+      })();
     </script>
     <script src="./assets/js/main.js"></script>
   </body>

@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="../portfolio-responsive-complete/assets/css/styles.css"
     />
+    <link rel="stylesheet" href="assets/css/documind-redesign.css" />
     <link rel="stylesheet" href="vitalblood.css" />
 
     <!-- BOX ICONS -->
@@ -26,48 +27,9 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- INLINE STYLES FOR IMAGE SLIDER -->
-    <style>
-      .image-slider {
-        position: relative;
-        width: 100%;
-        max-width: 600px;
-        overflow: hidden;
-      }
-
-      .slider-wrapper {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .slider-wrapper img {
-        width: 100%;
-        flex-shrink: 0;
-      }
-
-      .nav-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-      }
-
-      .nav-button.prev {
-        left: 10px;
-      }
-
-      .nav-button.next {
-        right: 10px;
-      }
-    </style>
   </head>
   <body>
+    <!-- HEADER NAV -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
@@ -77,19 +39,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="/index.html" class="nav__link active-link">Home</a>
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#projectoverview" class="nav__link">Project Overview</a>
+              <a href="#overview" class="nav__link active-link">Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
               <a href="#techstack" class="nav__link">Tech Stack</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="/index.html#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -99,254 +61,236 @@
         </div>
       </nav>
     </header>
-    <div class="promptsphereproject">
-      <div
-        class="arrow-div"
-        onclick="window.location.href = 'promptsphere.html'"
-      >
-        <h3>Next Project (PromptSphere)</h3>
-        <img src="vitalbloodimages/arrow-right.svg" alt="arrow right" />
+
+    <main class="documind-page bd-grid">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="documind-nav-bar">
+        <a href="jobblitz.html" class="documind-back-btn">
+          <i class="bx bx-left-arrow-alt"></i> Back: JobBlitz
+        </a>
+        <a href="promptsphere.html" class="documind-next-btn">
+          Next: PromptSphere <i class="bx bx-right-arrow-alt"></i>
+        </a>
       </div>
 
-      <div class="gradient-background">
-        <div class="topside">
-          <h1>DocuMind</h1>
-          <h3>AI Document Intelligence SaaS</h3>
-        </div>
-
-        <!-- Image Slider Section -->
-        <div class="pilok">
-          <div class="chinok">
-            <div class="image-slider">
-              <div class="slider-wrapper">
-                <img
-                  src="vitalbloodimages/DOCUMIND1.png"
-                  alt="PromptSphere Screenshot 1"
-                />
-                <img
-                  src="vitalbloodimages/DOCUMIND2.png"
-                  alt="PromptSphere Screenshot 2"
-                />
-                <img
-                  src="vitalbloodimages/DOCUMIND3.png"
-                  alt="PromptSphere Screenshot 3"
-                />
-                <img
-                  src="vitalbloodimages/DOCUMIND.png"
-                  alt="PromptSphere Screenshot 4"
-                />
-              </div>
-              <button class="nav-button prev">❮</button>
-              <button class="nav-button next">❯</button>
-            </div>
-            <div class="image212">
-              <img
-                src="vitalbloodimages/DOCUMIND-PHONE.png"
-                alt="PromptSphere Mobile Screenshot"
-              />
-            </div>
+      <!-- HERO SECTION -->
+      <section class="documind-hero" id="overview">
+        <div class="documind-hero__content">
+          <div class="documind-hero__badge">
+            <i class="bx bx-file"></i> AI Document Intelligence SaaS
           </div>
+          <h1 class="documind-hero__title">DocuMind</h1>
+          <p class="documind-hero__subtitle">
+            An AI-powered document intelligence platform that enables users to
+            upload files, analyze PDFs, retrieve semantic answers, and interact
+            with complex documents instantly.
+          </p>
 
-          <div class="links-single">
+          <div class="documind-hero__actions">
             <a
               href="https://documind-line.onrender.com/"
               target="_blank"
               rel="noopener noreferrer"
+              class="documind-btn documind-btn--primary"
             >
-              Deployed Link
+              <i class="bx bx-globe"></i> Live Application
             </a>
             <a
               href="vitalbloodimages/promptsphereVideo.mp4"
               target="_blank"
               rel="noopener noreferrer"
+              class="documind-btn documind-btn--secondary"
             >
-              Video Demo
+              <i class="bx bx-play-circle"></i> Watch Video Demo
             </a>
-          </div>
-
-          <!-- SHORT DESCRIPTION -->
-          <div class="textblood">
-            <p>
-              Experience DocuMind — an AI-powered document intelligence platform
-              that allows users to upload files, analyze PDFs, retrieve semantic
-              answers, and interact with documents using advanced AI
-              technologies.
-            </p>
           </div>
         </div>
 
-        <!-- PROJECT DETAILS -->
-        <section class="project-details" id="projectoverview">
-          <!-- OVERVIEW -->
-          <div class="description">
-            <h2>Project Overview</h2>
+        <!-- MOCKUP BROWSER CAROUSEL CARD -->
+        <div class="documind-hero__media">
+          <div class="documind-mockup-card">
+            <div class="documind-mockup-header">
+              <div class="documind-mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="documind-mockup-title"
+                >DocuMind Document Workspace</span
+              >
+            </div>
 
+            <div class="documind-carousel" id="documindCarousel">
+              <div class="documind-carousel-track" id="documindCarouselTrack">
+                <div class="documind-carousel-slide">
+                  <img
+                    src="vitalbloodimages/DOCUMIND1.png"
+                    alt="DocuMind Screen 1"
+                  />
+                </div>
+                <div class="documind-carousel-slide">
+                  <img
+                    src="vitalbloodimages/DOCUMIND2.png"
+                    alt="DocuMind Screen 2"
+                  />
+                </div>
+                <div class="documind-carousel-slide">
+                  <img
+                    src="vitalbloodimages/DOCUMIND3.png"
+                    alt="DocuMind Screen 3"
+                  />
+                </div>
+                <div class="documind-carousel-slide">
+                  <img
+                    src="vitalbloodimages/DOCUMIND.png"
+                    alt="DocuMind Screen 4"
+                  />
+                </div>
+              </div>
+              <button
+                class="documind-carousel-btn documind-prev"
+                id="documindPrevBtn"
+                aria-label="Previous"
+              >
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                class="documind-carousel-btn documind-next"
+                id="documindNextBtn"
+                aria-label="Next"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY FEATURES GRID -->
+      <section class="documind-section" id="features">
+        <h2 class="section-title">Platform Features</h2>
+        <div class="documind-features-grid">
+          <div class="documind-feature-card">
+            <div class="documind-feature-card__icon">
+              <i class="bx bx-message-square-detail"></i>
+            </div>
+            <h3>AI Document Chat</h3>
             <p>
-              DocuMind is an AI-powered document intelligence SaaS platform
-              built to transform the way users interact with files and PDFs.
+              Ask contextual questions directly against uploaded files and
+              receive precise responses.
             </p>
-
-            <p>
-              Users can upload documents, ask contextual questions, retrieve
-              semantic answers using vector embeddings, and generate AI-powered
-              insights instantly.
-            </p>
-
-            <p>Features include:</p>
-
-            <ul>
-              <li>
-                <strong>AI Document Chat:</strong>
-                Ask questions directly about uploaded files and PDFs.
-              </li>
-
-              <li>
-                <strong>Semantic Search:</strong>
-                Retrieve contextual answers using embeddings and AI.
-              </li>
-
-              <li>
-                <strong>PDF Intelligence:</strong>
-                Analyze large documents and extract insights rapidly.
-              </li>
-
-              <li>
-                <strong>Authentication System:</strong>
-                Secure login and protected user dashboards.
-              </li>
-
-              <li>
-                <strong>Multi-Document Support:</strong>
-                Interact with multiple files simultaneously.
-              </li>
-
-              <li>
-                <strong>Responsive SaaS Interface:</strong>
-                Modern responsive UI optimized for all devices.
-              </li>
-            </ul>
           </div>
 
-          <!-- TECH STACK -->
-          <div class="stack-used" id="techstack">
-            <h2>Tech Stack</h2>
-
-            <ul>
-              <li>
-                <img
-                  src="./assets/img/react-svgrepo-com.svg"
-                  alt="React"
-                  class="tech-icon"
-                />
-                <span>React</span>
-              </li>
-
-              <li>
-                <img
-                  src="./assets/img/next-logo.png"
-                  alt="Next.js"
-                  class="tech-icon"
-                />
-                <span>Next.js</span>
-              </li>
-
-              <li>
-                <img
-                  src="./assets/img/nodejs-svgrepo-com.svg"
-                  alt="Node.js"
-                  class="tech-icon"
-                />
-                <span>Node.js</span>
-              </li>
-
-              <li>
-                <img
-                  src="./assets/img/express-svgrepo-com.svg"
-                  alt="Express.js"
-                  class="tech-icon"
-                />
-                <span>Express.js</span>
-              </li>
-
-              <li>
-                <img
-                  src="./assets/img/mongodb-svgrepo-com.svg"
-                  alt="MongoDB"
-                  class="tech-icon"
-                />
-                <span>MongoDB</span>
-              </li>
-
-              <li>
-                <img
-                  src="./assets/img/tailwind-logo.png"
-                  alt="Tailwind CSS"
-                  class="tech-icon"
-                />
-                <span>Tailwind CSS</span>
-              </li>
-
-              <li>
-                <img
-                  src="./assets/img/chatgpt-logo.png"
-                  alt="OpenAI"
-                  class="tech-icon"
-                />
-                <span>OpenAI API</span>
-              </li>
-
-              <li>
-                <img
-                  src="./assets/img/docker-logo.png"
-                  alt="Docker"
-                  class="tech-icon"
-                />
-                <span>Docker</span>
-              </li>
-            </ul>
+          <div class="documind-feature-card">
+            <div class="documind-feature-card__icon">
+              <i class="bx bx-search-alt"></i>
+            </div>
+            <h3>Semantic Search</h3>
+            <p>
+              Retrieve deep contextual answers powered by vector embeddings and
+              LLMs.
+            </p>
           </div>
-        </section>
-      </div>
-    </div>
 
-    <!-- SLIDER SCRIPT -->
+          <div class="documind-feature-card">
+            <div class="documind-feature-card__icon">
+              <i class="bx bx-file"></i>
+            </div>
+            <h3>PDF Intelligence</h3>
+            <p>
+              Extract key insights, summaries, and structural content from large
+              files rapidly.
+            </p>
+          </div>
+
+          <div class="documind-feature-card">
+            <div class="documind-feature-card__icon">
+              <i class="bx bx-lock-alt"></i>
+            </div>
+            <h3>Authentication System</h3>
+            <p>
+              Secure login management and protected user workspace dashboards.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK SHOWCASE -->
+      <section class="documind-section" id="techstack">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="documind-tech-grid">
+          <div class="documind-tech-pill">
+            <img src="./assets/img/react-svgrepo-com.svg" alt="React" /><span
+              >React</span
+            >
+          </div>
+          <div class="documind-tech-pill">
+            <img src="./assets/img/next-logo.png" alt="Next.js" /><span
+              >Next.js</span
+            >
+          </div>
+          <div class="documind-tech-pill">
+            <img src="./assets/img/nodejs-svgrepo-com.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+          <div class="documind-tech-pill">
+            <img
+              src="./assets/img/express-svgrepo-com.svg"
+              alt="Express.js"
+            /><span>Express.js</span>
+          </div>
+          <div class="documind-tech-pill">
+            <img
+              src="./assets/img/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            /><span>MongoDB</span>
+          </div>
+          <div class="documind-tech-pill">
+            <img src="./assets/img/tailwind-logo.png" alt="Tailwind CSS" /><span
+              >Tailwind CSS</span
+            >
+          </div>
+          <div class="documind-tech-pill">
+            <img src="./assets/img/chatgpt-logo.png" alt="OpenAI API" /><span
+              >OpenAI API</span
+            >
+          </div>
+          <div class="documind-tech-pill">
+            <img src="./assets/img/docker-logo.png" alt="Docker" /><span
+              >Docker</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ISOLATED CAROUSEL SCRIPT -->
     <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
+      (function () {
+        const track = document.getElementById("documindCarouselTrack");
+        const prevBtn = document.getElementById("documindPrevBtn");
+        const nextBtn = document.getElementById("documindNextBtn");
+        const slides = document.querySelectorAll(".documind-carousel-slide");
+        let currentIndex = 0;
 
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-
-      const images = document.querySelectorAll(".slider-wrapper img");
-
-      let currentIndex = 0;
-
-      function showSlide(index) {
-        const totalImages = images.length;
-
-        if (index >= totalImages) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalImages - 1;
-        } else {
-          currentIndex = index;
+        function updateSlider(index) {
+          if (index >= slides.length) currentIndex = 0;
+          else if (index < 0) currentIndex = slides.length - 1;
+          else currentIndex = index;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
 
-        const offset = -currentIndex * 100;
-
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-      }
-
-      prevButton.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      showSlide(0);
+        if (prevBtn && nextBtn && track) {
+          prevBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex - 1);
+          });
+          nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex + 1);
+          });
+        }
+      })();
     </script>
-
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

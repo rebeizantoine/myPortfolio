@@ -1,71 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- PAGE TITLE -->
     <title>Antoine Rebeiz • Bridging Brushes Project</title>
 
-    <!-- Favicon -->
+    <!-- FAVICON -->
     <link
       rel="icon"
       type="image/png"
       href="assets/img/icons8-portfolio-30.png"
     />
 
-    <!-- Main CSS -->
+    <!-- EXTERNAL STYLESHEETS -->
     <link
       rel="stylesheet"
       href="../portfolio-responsive-complete/assets/css/styles.css"
     />
+    <link rel="stylesheet" href="assets/css/bridgingbrushes-redesign.css" />
     <link rel="stylesheet" href="vitalblood.css" />
 
-    <!-- Boxicons for nav toggle -->
+    <!-- BOX ICONS -->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- Slider Styles -->
-    <style>
-      .image-slider {
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        overflow: hidden;
-      }
-
-      .slider-wrapper {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .slider-wrapper img {
-        width: 100%;
-        flex-shrink: 0;
-      }
-
-      .nav-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-      }
-
-      .nav-button.prev {
-        left: 10px;
-      }
-
-      .nav-button.next {
-        right: 10px;
-      }
-    </style>
   </head>
   <body>
+    <!-- HEADER NAV -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
@@ -75,15 +39,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="/index.html" class="nav__link active-link"
-                >Brdging Brushes</a
-              >
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#projectoverview" class="nav__link">Project Overview</a>
+              <a href="#overview" class="nav__link active-link">Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
               <a href="#techstack" class="nav__link">Tech Stack</a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -93,192 +61,237 @@
         </div>
       </nav>
     </header>
-    <div class="bloodproject">
-      <div
-        class="arrow-div"
-        onclick="window.location.href='/Justanothersmm.html';"
-      >
-        <h3>Next Project(JustAnotherSmm)</h3>
-        <img src="vitalbloodimages/arrow-right.svg" alt="" />
-      </div>
-      <div class="gradient-background">
-        <div class="topside">
-          <h1>Bridging Brushes</h1>
-          <h3>Showcasing Artists, Artworks, and Exhibitions</h3>
-        </div>
 
-        <!-- Image Slider Section -->
-        <div class="pilok">
-          <div class="chinok">
-            <div class="image-slider">
-              <div class="slider-wrapper">
-                <img src="vitalbloodimages/BB1.png" alt="Image 1" />
-                <img src="vitalbloodimages/BB2.png" alt="Image 2" />
-                <img src="vitalbloodimages/BB3.png" alt="Image 3" />
-                <img src="vitalbloodimages/BB4.png" alt="Image 4" />
-              </div>
-              <button class="nav-button prev">❮</button>
-              <button class="nav-button next">❯</button>
-            </div>
-            <div class="image212">
-              <img
-                src="vitalbloodimages/BB-PHONE.png"
-                alt="Mobile Screenshot"
-              />
-            </div>
+    <main class="bridgingbrushes-page bd-grid">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="bridgingbrushes-nav-bar">
+        <a href="games4kidz.html" class="bridgingbrushes-back-btn">
+          <i class="bx bx-left-arrow-alt"></i> Back: Games4Kidz
+        </a>
+        <a href="Justanothersmm.html" class="bridgingbrushes-next-btn">
+          Next: JustAnotherSMM <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section class="bridgingbrushes-hero" id="overview">
+        <div class="bridgingbrushes-hero__content">
+          <div class="bridgingbrushes-hero__badge">
+            <i class="bx bx-palette"></i> Art Showcase Platform
           </div>
-          <div class="links-single">
+          <h1 class="bridgingbrushes-hero__title">Bridging Brushes</h1>
+          <p class="bridgingbrushes-hero__subtitle">
+            Bridging Brushes connects art enthusiasts with talented artists,
+            exclusive artworks, and curated exhibitions. Discover new artists,
+            explore unique creative works, and stay updated on exhibitions.
+          </p>
+
+          <div class="bridgingbrushes-hero__actions">
             <a
               href="https://bridgingbrushes.com/"
               target="_blank"
               rel="noopener noreferrer"
+              class="bridgingbrushes-btn bridgingbrushes-btn--primary"
             >
-              Deployed Link
+              <i class="bx bx-globe"></i> Live Application
             </a>
             <a
               href="vitalbloodimages/CANVABRIDGING.mp4"
               target="_blank"
               rel="noopener noreferrer"
+              class="bridgingbrushes-btn bridgingbrushes-btn--secondary"
             >
-              Video Demo
+              <i class="bx bx-play-circle"></i> Watch Video Demo
             </a>
           </div>
+        </div>
 
-          <div class="textblood">
+        <!-- MOCKUP BROWSER CAROUSEL CARD -->
+        <div class="bridgingbrushes-hero__media">
+          <div class="bridgingbrushes-mockup-card">
+            <div class="bridgingbrushes-mockup-header">
+              <div class="bridgingbrushes-mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="bridgingbrushes-mockup-title"
+                >Bridging Brushes Web Experience</span
+              >
+            </div>
+
+            <div class="bridgingbrushes-carousel" id="bridgingbrushesCarousel">
+              <div
+                class="bridgingbrushes-carousel-track"
+                id="bridgingbrushesCarouselTrack"
+              >
+                <div class="bridgingbrushes-carousel-slide">
+                  <img
+                    src="vitalbloodimages/BB1.png"
+                    alt="Bridging Brushes Screen 1"
+                  />
+                </div>
+                <div class="bridgingbrushes-carousel-slide">
+                  <img
+                    src="vitalbloodimages/BB2.png"
+                    alt="Bridging Brushes Screen 2"
+                  />
+                </div>
+                <div class="bridgingbrushes-carousel-slide">
+                  <img
+                    src="vitalbloodimages/BB3.png"
+                    alt="Bridging Brushes Screen 3"
+                  />
+                </div>
+                <div class="bridgingbrushes-carousel-slide">
+                  <img
+                    src="vitalbloodimages/BB4.png"
+                    alt="Bridging Brushes Screen 4"
+                  />
+                </div>
+              </div>
+              <button
+                class="bridgingbrushes-carousel-btn bridgingbrushes-prev"
+                id="bridgingbrushesPrevBtn"
+                aria-label="Previous"
+              >
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                class="bridgingbrushes-carousel-btn bridgingbrushes-next"
+                id="bridgingbrushesNextBtn"
+                aria-label="Next"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY FEATURES GRID -->
+      <section class="bridgingbrushes-section" id="features">
+        <h2 class="section-title">Core Capabilities</h2>
+        <div class="bridgingbrushes-features-grid">
+          <div class="bridgingbrushes-feature-card">
+            <div class="bridgingbrushes-feature-card__icon">
+              <i class="bx bx-user-pin"></i>
+            </div>
+            <h3>Artist Profiles</h3>
             <p>
-              Bridging Brushes is a platform designed to connect art enthusiasts
-              with talented artists, exclusive artworks, and curated
-              exhibitions.
+              Dedicated showcase pages for artists to highlight their bio,
+              artistic vision, and catalog of work.
+            </p>
+          </div>
+
+          <div class="bridgingbrushes-feature-card">
+            <div class="bridgingbrushes-feature-card__icon">
+              <i class="bx bx-images"></i>
+            </div>
+            <h3>Curated Artworks</h3>
+            <p>
+              A organized collection of fine art across various styles,
+              techniques, and mediums.
+            </p>
+          </div>
+
+          <div class="bridgingbrushes-feature-card">
+            <div class="bridgingbrushes-feature-card__icon">
+              <i class="bx bx-calendar-event"></i>
+            </div>
+            <h3>Exhibitions</h3>
+            <p>
+              Complete event tracking for current, past, and upcoming gallery
+              exhibitions and details.
+            </p>
+          </div>
+
+          <div class="bridgingbrushes-feature-card">
+            <div class="bridgingbrushes-feature-card__icon">
+              <i class="bx bx-grid-alt"></i>
+            </div>
+            <h3>Management Dashboard</h3>
+            <p>
+              An administrative suite for full management over artist profiles,
+              artwork entries, and active exhibitions.
             </p>
           </div>
         </div>
-        <section class="project-details" id="projectoverview">
-          <div class="description">
-            <h2>Project Overview</h2>
-            <p>
-              Bridging Brushes offers a comprehensive platform for showcasing
-              and exploring art, featuring tools to enhance the artist and
-              viewer experience. Visitors can discover new artists, browse
-              unique artworks, and stay informed about upcoming exhibitions.
-            </p>
-            <p>
-              The site features a comprehensive suite of tools to enhance your
-              shopping experience, including:
-            </p>
-            <ul>
-              <li>
-                <strong>Artist Profiles:</strong> Detailed pages for artists to
-                showcase their work and background.
-              </li>
-              <li>
-                <strong>Artworks:</strong> A curated collection of art from
-                various mediums and styles.
-              </li>
-              <li>
-                <strong>Exhibitions:</strong> Browse current, past, and future
-                exhibitions with all relevant details.
-              </li>
-              <li>
-                <strong>Dashboard:</strong> A feature-rich dashboard for
-                managing artist profiles, artworks, and exhibitions.
-              </li>
-            </ul>
-          </div>
+      </section>
 
-          <div class="stack-used" id="techstack">
-            <h2>Tech Stack</h2>
-            <ul>
-              <li>
-                <img
-                  src="./assets/img/html-5-svgrepo-com.svg"
-                  alt="HTML"
-                  class="tech-icon"
-                />
-                <span>HTML</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/css-svgrepo-com.svg"
-                  alt="CSS"
-                  class="tech-icon"
-                />
-                <span>CSS (Tailwind)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/javascript-svgrepo-com.svg"
-                  alt="JavaScript"
-                  class="tech-icon"
-                />
-                <span>JavaScript (React.js)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/mongodb-svgrepo-com.svg"
-                  alt="MongoDB"
-                  class="tech-icon"
-                />
-                <span>MongoDB</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/express-svgrepo-com.svg"
-                  alt="Express.js"
-                  class="tech-icon"
-                />
-                <span>Express.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/react-svgrepo-com.svg"
-                  alt="React"
-                  class="tech-icon"
-                />
-                <span>React</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/nodejs-svgrepo-com.svg"
-                  alt="Node.js"
-                  class="tech-icon"
-                />
-                <span>Node.js</span>
-              </li>
-            </ul>
+      <!-- TECH STACK SHOWCASE -->
+      <section class="bridgingbrushes-section" id="techstack">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="bridgingbrushes-tech-grid">
+          <div class="bridgingbrushes-tech-pill">
+            <img src="./assets/img/html-5-svgrepo-com.svg" alt="HTML" /><span
+              >HTML5</span
+            >
           </div>
-        </section>
-      </div>
-    </div>
+          <div class="bridgingbrushes-tech-pill">
+            <img src="./assets/img/css-svgrepo-com.svg" alt="CSS" /><span
+              >CSS / Tailwind</span
+            >
+          </div>
+          <div class="bridgingbrushes-tech-pill">
+            <img
+              src="./assets/img/javascript-svgrepo-com.svg"
+              alt="JavaScript"
+            /><span>JavaScript</span>
+          </div>
+          <div class="bridgingbrushes-tech-pill">
+            <img src="./assets/img/react-svgrepo-com.svg" alt="React" /><span
+              >React.js</span
+            >
+          </div>
+          <div class="bridgingbrushes-tech-pill">
+            <img src="./assets/img/nodejs-svgrepo-com.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+          <div class="bridgingbrushes-tech-pill">
+            <img
+              src="./assets/img/express-svgrepo-com.svg"
+              alt="Express.js"
+            /><span>Express.js</span>
+          </div>
+          <div class="bridgingbrushes-tech-pill">
+            <img
+              src="./assets/img/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            /><span>MongoDB</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- ISOLATED CAROUSEL SCRIPT -->
     <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-      const images = document.querySelectorAll(".slider-wrapper img");
-      let currentIndex = 0;
+      (function () {
+        const track = document.getElementById("bridgingbrushesCarouselTrack");
+        const prevBtn = document.getElementById("bridgingbrushesPrevBtn");
+        const nextBtn = document.getElementById("bridgingbrushesNextBtn");
+        const slides = document.querySelectorAll(
+          ".bridgingbrushes-carousel-slide",
+        );
+        let currentIndex = 0;
 
-      function showSlide(index) {
-        const totalImages = images.length;
-        if (index >= totalImages) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalImages - 1;
-        } else {
-          currentIndex = index;
+        function updateSlider(index) {
+          if (index >= slides.length) currentIndex = 0;
+          else if (index < 0) currentIndex = slides.length - 1;
+          else currentIndex = index;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-        const offset = -currentIndex * 100;
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-      }
 
-      prevButton.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      showSlide(0);
+        if (prevBtn && nextBtn && track) {
+          prevBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex - 1);
+          });
+          nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex + 1);
+          });
+        }
+      })();
     </script>
     <script src="./assets/js/main.js"></script>
   </body>

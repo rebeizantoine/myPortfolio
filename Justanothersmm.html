@@ -1,53 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Antoine Rebeiz • JustAnotherSMM Project</title>
-  <link rel="icon" type="image/png" href="assets/img/icons8-portfolio-30.png" />
+    <!-- PAGE TITLE -->
+    <title>Antoine Rebeiz • JustAnotherSMM Project</title>
 
-  <link
-    rel="stylesheet"
-    href="../portfolio-responsive-complete/assets/css/styles.css"
-  />
-  <link rel="stylesheet" href="vitalblood.css" />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/icons8-portfolio-30.png"
+    />
 
-  <!-- Boxicons -->
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <!-- EXTERNAL STYLESHEETS -->
+    <link
+      rel="stylesheet"
+      href="../portfolio-responsive-complete/assets/css/styles.css"
+    />
+    <link rel="stylesheet" href="vitalblood.css" />
+    <link rel="stylesheet" href="assets/css/smm-redesign.css" />
 
-  <style>
-    /* Basic slider styles */
-    .image-slider {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      overflow: hidden;
-    }
-    .slider-wrapper {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-    .slider-wrapper img {
-      width: 100%;
-      flex-shrink: 0;
-    }
-    .nav-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      font-size: 18px;
-    }
-    .nav-button.prev { left: 10px; }
-    .nav-button.next { right: 10px; }
-  </style>
-</head>
+    <!-- BOX ICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
   <body>
+    <!-- HEADER NAV -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
@@ -57,15 +39,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="/index.html" class="nav__link active-link"
-                >Brdging Brushes</a
-              >
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#projectoverview" class="nav__link">Project Overview</a>
+              <a href="#overview" class="nav__link active-link">Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
               <a href="#techstack" class="nav__link">Tech Stack</a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -75,189 +61,233 @@
         </div>
       </nav>
     </header>
-    <div class="bloodproject">
-      <div class="arrow-div" onclick="window.location.href='jobblitz.html';">
-        <h3>Next Project(Justanothersmm)</h3>
-        <img src="vitalbloodimages/arrow-right.svg" alt="" />
-      </div>
-    </div>
-      <div class="gradient-background">
-        <div class="topside">
-          <h1>JustAnotherSMM</h1>
-          <h3>Your One-Stop Shop for Social Media Growth</h3>
-        </div>
 
-        <!-- Image Slider Section -->
-        <div class="pilok">
-          <div class="chinok">
-            <div class="image-slider">
-              <div class="slider-wrapper">
-                <img src="vitalbloodimages/SMM1.png" alt="Image 1" />
-                <img src="vitalbloodimages/SMM2.png" alt="Image 2" />
-                <img src="vitalbloodimages/SMM3.png" alt="Image 3" />
-                <img src="vitalbloodimages/SMM4.png" alt="Image 4" />
-              </div>
-              <button class="nav-button prev">❮</button>
-              <button class="nav-button next">❯</button>
-            </div>
-            <div class="image212">
-              <img
-                src="vitalbloodimages/SMM-PHONE.png"
-                alt="Mobile Screenshot"
-              />
-            </div>
+    <main class="smm-page bd-grid">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="smm-nav-bar">
+        <a href="promptsphere.html" class="smm-back-btn">
+          <i class="bx bx-left-arrow-alt"></i> Back: PromptSphere
+        </a>
+        <a href="jobblitz.html" class="smm-next-btn">
+          Next: JobBlitz <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section class="smm-hero" id="overview">
+        <div class="smm-hero__content">
+          <div class="smm-hero__badge">
+            <i class="bx bx-trending-up"></i> Social Media Growth SaaS
           </div>
-          <div class="links-single">
+          <h1 class="smm-hero__title">JustAnotherSMM</h1>
+          <p class="smm-hero__subtitle">
+            Your all-in-one platform for accelerating social media presence.
+            Automate engagement growth across Instagram, Twitter, and Facebook
+            with intuitive order analytics.
+          </p>
+
+          <div class="smm-hero__actions">
             <a
               href="https://justanothersmm.onrender.com"
               target="_blank"
               rel="noopener noreferrer"
+              class="smm-btn smm-btn--primary"
             >
-              Deployed Link
-            </a>  
+              <i class="bx bx-globe"></i> Live Application
+            </a>
             <a
               href="vitalbloodimages/JUSTSMMTRIAL.mp4"
               target="_blank"
               rel="noopener noreferrer"
+              class="smm-btn smm-btn--secondary"
             >
-              Video Demo
+              <i class="bx bx-play-circle"></i> Watch Video Demo
             </a>
           </div>
+        </div>
 
-          <div class="textblood">
+        <!-- MOCKUP BROWSER CAROUSEL CARD -->
+        <div class="smm-hero__media">
+          <div class="smm-mockup-card">
+            <div class="smm-mockup-header">
+              <div class="smm-mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="smm-mockup-title"
+                >JustAnotherSMM Dashboard Platform</span
+              >
+            </div>
+
+            <div class="smm-carousel" id="smmCarousel">
+              <div class="smm-carousel-track" id="smmCarouselTrack">
+                <div class="smm-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM1.png"
+                    alt="JustAnotherSMM Screen 1"
+                  />
+                </div>
+                <div class="smm-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM2.png"
+                    alt="JustAnotherSMM Screen 2"
+                  />
+                </div>
+                <div class="smm-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM3.png"
+                    alt="JustAnotherSMM Screen 3"
+                  />
+                </div>
+                <div class="smm-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM4.png"
+                    alt="JustAnotherSMM Screen 4"
+                  />
+                </div>
+              </div>
+              <button
+                class="smm-carousel-btn smm-prev"
+                id="smmPrevBtn"
+                aria-label="Previous"
+              >
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                class="smm-carousel-btn smm-next"
+                id="smmNextBtn"
+                aria-label="Next"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY FEATURES GRID -->
+      <section class="smm-section" id="features">
+        <h2 class="section-title">Platform Features</h2>
+        <div class="smm-features-grid">
+          <div class="smm-feature-card">
+            <div class="smm-feature-card__icon">
+              <i class="bx bxl-instagram"></i>
+            </div>
+            <h3>Instagram Acceleration</h3>
             <p>
-              JustAnotherSMM is your go-to platform for boosting your social
-              media presence. We offer a range of packages for buying Instagram
-              followers, Twitter likes, Facebook views, and more.
+              Targeted growth tools providing authentic followers, post likes,
+              and story views to scale profile authority.
+            </p>
+          </div>
+
+          <div class="smm-feature-card">
+            <div class="smm-feature-card__icon">
+              <i class="bx bxl-twitter"></i>
+            </div>
+            <h3>Twitter Boosters</h3>
+            <p>
+              Amplify retweets, engagement metrics, and profile visibility
+              through structured delivery options.
+            </p>
+          </div>
+
+          <div class="smm-feature-card">
+            <div class="smm-feature-card__icon">
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <h3>Facebook Audience</h3>
+            <p>
+              Expand video views, page likes, and interactive comments tailored
+              for community engagement.
+            </p>
+          </div>
+
+          <div class="smm-feature-card">
+            <div class="smm-feature-card__icon">
+              <i class="bx bx-slider-alt"></i>
+            </div>
+            <h3>Order Dashboard</h3>
+            <p>
+              Filter purchases by date, time, and pricing while managing active
+              service queues seamlessly.
             </p>
           </div>
         </div>
-        <section class="project-details" id="projectoverview">
-          <div class="description">
-            <h2>Project Overview</h2>
-            <p>
-              At JustAnotherSMM, we specialize in social media growth
-              strategies, providing you with an easy way to increase your
-              presence across platforms.
-            </p>
-            <p>
-              The site features a comprehensive suite of tools to enhance your
-              shopping experience, including:
-            </p>
-            <ul>
-              <li>
-                <strong>Instagram:</strong> Followers, likes, and views to boost
-                your profile engagement.
-              </li>
-              <li>
-                <strong>Twitter:</strong> Get more retweets, likes, and
-                followers.
-              </li>
-              <li>
-                <strong>Facebook:</strong> Increase views, likes, and comments
-                on your posts.
-              </li>
-              <li>
-                <strong>Dashboard:</strong> A feature-rich dashboard for
-                managing orders filtering prices and data/time of the purchase.
-              </li>
-            </ul>
-          </div>
+      </section>
 
-          <div class="stack-used" id="techstack">
-            <h2>Tech Stack</h2>
-            <ul>
-              <li>
-                <img
-                  src="./assets/img/html-5-svgrepo-com.svg"
-                  alt="HTML"
-                  class="tech-icon"
-                />
-                <span>HTML</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/css-svgrepo-com.svg"
-                  alt="CSS"
-                  class="tech-icon"
-                />
-                <span>CSS (Tailwind)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/javascript-svgrepo-com.svg"
-                  alt="JavaScript"
-                  class="tech-icon"
-                />
-                <span>JavaScript (React.js)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/mongodb-svgrepo-com.svg"
-                  alt="MongoDB"
-                  class="tech-icon"
-                />
-                <span>MongoDB</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/express-svgrepo-com.svg"
-                  alt="Express.js"
-                  class="tech-icon"
-                />
-                <span>Express.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/react-svgrepo-com.svg"
-                  alt="React"
-                  class="tech-icon"
-                />
-                <span>React</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/nodejs-svgrepo-com.svg"
-                  alt="Node.js"
-                  class="tech-icon"
-                />
-                <span>Node.js</span>
-              </li>
-            </ul>
+      <!-- TECH STACK SHOWCASE -->
+      <section class="smm-section" id="techstack">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="smm-tech-grid">
+          <div class="smm-tech-pill">
+            <img src="./assets/img/react-svgrepo-com.svg" alt="React" /><span
+              >React.js</span
+            >
           </div>
-        </section>
-      </div>
-    </div>
+          <div class="smm-tech-pill">
+            <img src="./assets/img/nodejs-svgrepo-com.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+          <div class="smm-tech-pill">
+            <img
+              src="./assets/img/express-svgrepo-com.svg"
+              alt="Express"
+            /><span>Express.js</span>
+          </div>
+          <div class="smm-tech-pill">
+            <img
+              src="./assets/img/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            /><span>MongoDB</span>
+          </div>
+          <div class="smm-tech-pill">
+            <img
+              src="./assets/img/javascript-svgrepo-com.svg"
+              alt="JavaScript"
+            /><span>JavaScript</span>
+          </div>
+          <div class="smm-tech-pill">
+            <img
+              src="./assets/img/css-svgrepo-com.svg"
+              alt="Tailwind CSS"
+            /><span>Tailwind CSS</span>
+          </div>
+          <div class="smm-tech-pill">
+            <img src="./assets/img/html-5-svgrepo-com.svg" alt="HTML5" /><span
+              >HTML5</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- ISOLATED CAROUSEL SCRIPT -->
     <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-      const images = document.querySelectorAll(".slider-wrapper img");
-      let currentIndex = 0;
+      (function () {
+        const track = document.getElementById("smmCarouselTrack");
+        const prevBtn = document.getElementById("smmPrevBtn");
+        const nextBtn = document.getElementById("smmNextBtn");
+        const slides = document.querySelectorAll(".smm-carousel-slide");
+        let currentIndex = 0;
 
-      function showSlide(index) {
-        const totalImages = images.length;
-        if (index >= totalImages) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalImages - 1;
-        } else {
-          currentIndex = index;
+        function updateSlider(index) {
+          if (index >= slides.length) currentIndex = 0;
+          else if (index < 0) currentIndex = slides.length - 1;
+          else currentIndex = index;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-        const offset = -currentIndex * 100;
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-      }
 
-      prevButton.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      showSlide(0);
+        if (prevBtn && nextBtn && track) {
+          prevBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex - 1);
+          });
+          nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex + 1);
+          });
+        }
+      })();
     </script>
     <script src="./assets/js/main.js"></script>
   </body>

@@ -1,61 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antoine Rebeiz • Games4Kidz Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/img/icons8-portfolio-30.png" />
+    <!-- PAGE TITLE -->
+    <title>Antoine Rebeiz • Games4Kidz Project</title>
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="../portfolio-responsive-complete/assets/css/styles.css" />
-  <link rel="stylesheet" href="vitalblood.css" />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/icons8-portfolio-30.png"
+    />
+    <link rel="stylesheet" href="vitalblood.css" />
 
-  <!-- Boxicons for menu toggle -->
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <!-- EXTERNAL STYLESHEETS -->
+    <link
+      rel="stylesheet"
+      href="../portfolio-responsive-complete/assets/css/styles.css"
+    />
+    <link rel="stylesheet" href="assets/css/games4kidz-redesign.css" />
 
-  <!-- Slider Styles -->
-  <style>
-    .image-slider {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      overflow: hidden;
-    }
-
-    .slider-wrapper {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .slider-wrapper img {
-      width: 100%;
-      flex-shrink: 0;
-    }
-
-    .nav-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      font-size: 18px;
-    }
-
-    .nav-button.prev {
-      left: 10px;
-    }
-
-    .nav-button.next {
-      right: 10px;
-    }
-  </style>
-</head>
+    <!-- BOX ICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
   <body>
+    <!-- HEADER NAV -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
@@ -65,15 +39,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="/index.html" class="nav__link active-link"
-                >Games4Kidz</a
-              >
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#projectoverview" class="nav__link">Project Overview</a>
+              <a href="#overview" class="nav__link active-link">Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
               <a href="#techstack" class="nav__link">Tech Stack</a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -83,186 +61,229 @@
         </div>
       </nav>
     </header>
-    <div class="bloodproject">
-      <div class="arrow-div" onclick="window.location.href='jobblitz.html';">
-        <h3>Next Project(Portfolio)</h3>
-        <img src="vitalbloodimages/arrow-right.svg" alt="" />
-      </div>
-    </div>
-      <div class="gradient-background">
-        <div class="topside">
-          <h1>Games4Kidz</h1>
-          <h3>Fun & Educational Games for Kids</h3>
-        </div>
 
-        <!-- Image Slider Section -->
-        <div class="pilok">
-          <div class="chinok">
-            <div class="image-slider">
-              <div class="slider-wrapper">
-                <img src="vitalbloodimages/G4K1.png" alt="Image 1" />
-                <img src="vitalbloodimages/G4K2.png" alt="Image 2" />
-                <img src="vitalbloodimages/G4K3.png" alt="Image 3" />
-              </div>
-              <button class="nav-button prev">❮</button>
-              <button class="nav-button next">❯</button>
-            </div>
-            <div class="image212">
-              <img
-                src="vitalbloodimages/G4KMOBILE.png"
-                alt="Mobile Screenshot"
-              />
-            </div>
+    <main class="games4kidz-page bd-grid">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="games4kidz-nav-bar">
+        <a href="documind.html" class="games4kidz-back-btn">
+          <i class="bx bx-left-arrow-alt"></i> Back: DocuMind
+        </a>
+        <a href="jobblitz.html" class="games4kidz-next-btn">
+          Next: JobBlitz <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section class="games4kidz-hero" id="overview">
+        <div class="games4kidz-hero__content">
+          <div class="games4kidz-hero__badge">
+            <i class="bx bx-joystick"></i> Educational Gaming Platform
           </div>
-          <div class="links-single">
+          <h1 class="games4kidz-hero__title">Games4Kidz</h1>
+          <p class="games4kidz-hero__subtitle">
+            Discover fun and educational games for kids! Games4Kidz offers
+            interactive learning experiences, helping kids improve math skills,
+            learn shapes, and identify animals through play.
+          </p>
+
+          <div class="games4kidz-hero__actions">
             <a
               href="https://games4kidz.onrender.com"
               target="_blank"
               rel="noopener noreferrer"
+              class="games4kidz-btn games4kidz-btn--primary"
             >
-              Deployed Link
-            </a>  
+              <i class="bx bx-globe"></i> Live Application
+            </a>
             <a
               href="vitalbloodimages/JUSTSMMTRIAL.mp4"
               target="_blank"
               rel="noopener noreferrer"
+              class="games4kidz-btn games4kidz-btn--secondary"
             >
-              Video Demo
+              <i class="bx bx-play-circle"></i> Watch Video Demo
             </a>
           </div>
+        </div>
 
-          <div class="textblood">
+        <!-- MOCKUP BROWSER CAROUSEL CARD -->
+        <div class="games4kidz-hero__media">
+          <div class="games4kidz-mockup-card">
+            <div class="games4kidz-mockup-header">
+              <div class="games4kidz-mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="games4kidz-mockup-title"
+                >Games4Kidz Web Experience</span
+              >
+            </div>
+
+            <div class="games4kidz-carousel" id="games4kidzCarousel">
+              <div
+                class="games4kidz-carousel-track"
+                id="games4kidzCarouselTrack"
+              >
+                <div class="games4kidz-carousel-slide">
+                  <img
+                    src="vitalbloodimages/G4K1.png"
+                    alt="Games4Kidz Screen 1"
+                  />
+                </div>
+                <div class="games4kidz-carousel-slide">
+                  <img
+                    src="vitalbloodimages/G4K2.png"
+                    alt="Games4Kidz Screen 2"
+                  />
+                </div>
+                <div class="games4kidz-carousel-slide">
+                  <img
+                    src="vitalbloodimages/G4K3.png"
+                    alt="Games4Kidz Screen 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="games4kidz-carousel-btn games4kidz-prev"
+                id="games4kidzPrevBtn"
+                aria-label="Previous"
+              >
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                class="games4kidz-carousel-btn games4kidz-next"
+                id="games4kidzNextBtn"
+                aria-label="Next"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY FEATURES GRID -->
+      <section class="games4kidz-section" id="features">
+        <h2 class="section-title">Interactive Modules</h2>
+        <div class="games4kidz-features-grid">
+          <div class="games4kidz-feature-card">
+            <div class="games4kidz-feature-card__icon">
+              <i class="bx bx-calculator"></i>
+            </div>
+            <h3>MathKidz</h3>
             <p>
-              Discover fun and educational games for kids! Games4Kidz offers interactive learning experiences, helping kids improve math skills, learn shapes, and identify animals.
+              An engaging math game designed to improve addition, subtraction,
+              multiplication, and division skills.
+            </p>
+          </div>
 
+          <div class="games4kidz-feature-card">
+            <div class="games4kidz-feature-card__icon">
+              <i class="bx bx-shapes"></i>
+            </div>
+            <h3>ShapeForKidz</h3>
+            <p>
+              Interactive matching activities helping children recognize and
+              differentiate geometry and shapes.
+            </p>
+          </div>
+
+          <div class="games4kidz-feature-card">
+            <div class="games4kidz-feature-card__icon">
+              <i class="bx bx-bone"></i>
+            </div>
+            <h3>Animal4Kidz</h3>
+            <p>
+              Teaches kids to identify diverse animals while learning
+              interesting educational facts about them.
+            </p>
+          </div>
+
+          <div class="games4kidz-feature-card">
+            <div class="games4kidz-feature-card__icon">
+              <i class="bx bx-help-circle"></i>
+            </div>
+            <h3>Kids Quiz & Dashboard</h3>
+            <p>
+              Interactive knowledge quizzes paired with a management dashboard
+              for filtering order metrics and purchasing data.
             </p>
           </div>
         </div>
-        <section class="project-details" id="projectoverview">
-          <div class="description">
-            <h2>Project Overview</h2>
-            <p>
-              Games4Kidz is a platform offering various games to make learning engaging for children. The site includes:
+      </section>
 
-            </p>
-            <p>
-              <strong>MathKidz:</strong> A math game to improve addition, subtraction, multiplication, and division skills.
-
-            </p>
-            <ul>
-              <li>
-                <strong>ShapeForKidz:</strong> Helps kids recognize and match different shapes through interactive play.
-
-              </li>
-              <li>
-                <strong>Animal4Kidz:</strong> Teaches kids to identify animals and learn fun facts about them.
-
-              </li>
-              <li>
-                <strong>Kids Quiz:</strong> An interactive quiz to test kids' knowledge in various subjects.
-
-              </li>
-              <li>
-                <strong>Dashboard:</strong> A feature-rich dashboard for
-                managing orders filtering prices and data/time of the purchase.
-              </li>
-            </ul>
+      <!-- TECH STACK SHOWCASE -->
+      <section class="games4kidz-section" id="techstack">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="games4kidz-tech-grid">
+          <div class="games4kidz-tech-pill">
+            <img src="./assets/img/html-5-svgrepo-com.svg" alt="HTML" /><span
+              >HTML5</span
+            >
           </div>
-
-          <div class="stack-used" id="techstack">
-            <h2>Tech Stack</h2>
-            <ul>
-              <li>
-                <img
-                  src="./assets/img/html-5-svgrepo-com.svg"
-                  alt="HTML"
-                  class="tech-icon"
-                />
-                <span>HTML</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/css-svgrepo-com.svg"
-                  alt="CSS"
-                  class="tech-icon"
-                />
-                <span>CSS (Tailwind)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/javascript-svgrepo-com.svg"
-                  alt="JavaScript"
-                  class="tech-icon"
-                />
-                <span>JavaScript (React.js)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/mongodb-svgrepo-com.svg"
-                  alt="MongoDB"
-                  class="tech-icon"
-                />
-                <span>MongoDB</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/express-svgrepo-com.svg"
-                  alt="Express.js"
-                  class="tech-icon"
-                />
-                <span>Express.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/react-svgrepo-com.svg"
-                  alt="React"
-                  class="tech-icon"
-                />
-                <span>React</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/nodejs-svgrepo-com.svg"
-                  alt="Node.js"
-                  class="tech-icon"
-                />
-                <span>Node.js</span>
-              </li>
-            </ul>
+          <div class="games4kidz-tech-pill">
+            <img src="./assets/img/css-svgrepo-com.svg" alt="CSS" /><span
+              >CSS / Tailwind</span
+            >
           </div>
-        </section>
-      </div>
-    </div>
+          <div class="games4kidz-tech-pill">
+            <img
+              src="./assets/img/javascript-svgrepo-com.svg"
+              alt="JavaScript"
+            /><span>JavaScript</span>
+          </div>
+          <div class="games4kidz-tech-pill">
+            <img src="./assets/img/react-svgrepo-com.svg" alt="React" /><span
+              >React.js</span
+            >
+          </div>
+          <div class="games4kidz-tech-pill">
+            <img src="./assets/img/nodejs-svgrepo-com.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+          <div class="games4kidz-tech-pill">
+            <img
+              src="./assets/img/express-svgrepo-com.svg"
+              alt="Express.js"
+            /><span>Express.js</span>
+          </div>
+          <div class="games4kidz-tech-pill">
+            <img
+              src="./assets/img/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            /><span>MongoDB</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- ISOLATED CAROUSEL SCRIPT -->
     <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-      const images = document.querySelectorAll(".slider-wrapper img");
-      let currentIndex = 0;
+      (function () {
+        const track = document.getElementById("games4kidzCarouselTrack");
+        const prevBtn = document.getElementById("games4kidzPrevBtn");
+        const nextBtn = document.getElementById("games4kidzNextBtn");
+        const slides = document.querySelectorAll(".games4kidz-carousel-slide");
+        let currentIndex = 0;
 
-      function showSlide(index) {
-        const totalImages = images.length;
-        if (index >= totalImages) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalImages - 1;
-        } else {
-          currentIndex = index;
+        function updateSlider(index) {
+          if (index >= slides.length) currentIndex = 0;
+          else if (index < 0) currentIndex = slides.length - 1;
+          else currentIndex = index;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-        const offset = -currentIndex * 100;
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-      }
 
-      prevButton.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      showSlide(0);
+        if (prevBtn && nextBtn && track) {
+          prevBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex - 1);
+          });
+          nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex + 1);
+          });
+        }
+      })();
     </script>
     <script src="./assets/js/main.js"></script>
   </body>

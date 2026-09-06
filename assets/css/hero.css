@@ -1,0 +1,130 @@
+/* ==========================================================================
+   HERO SECTION ONLY (hero.css)
+   ========================================================================== */
+
+.home {
+  position: relative;
+  row-gap: 3rem;
+  padding: 8rem 0 4rem;
+  display: grid;
+}
+
+/* --- Layout Grid Alignment --- */
+@media screen and (min-width: 768px) {
+  .home {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    padding: 10rem 0 4rem;
+  }
+}
+
+.home__data {
+  align-self: center;
+}
+
+/* --- Typography Hierarchy --- */
+.home__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: var(--big-font-size);
+  line-height: 1.15;
+  margin-bottom: 2.25rem;
+}
+
+.home__greeting {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--second-color);
+  letter-spacing: 0.5px;
+}
+
+.home__title-color {
+  color: var(--first-color);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+.home__title-main {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  color: var(--second-color);
+  margin-top: 0.25rem;
+}
+
+.home__title-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
+  color: hsl(var(--hue-color), 20%, 45%);
+}
+
+/* --- Actions & Social Grouping --- */
+.home__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0;
+}
+
+.home__social-icon {
+  font-size: 1.6rem;
+  color: var(--second-color);
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+  margin: 0;
+  display: inline-flex;
+}
+
+.home__social-icon:hover {
+  color: var(--first-color);
+  transform: translateY(-3px);
+}
+
+/* --- Profile Photo Frame (Replaces SVG Mask Bugs) --- */
+.home__img {
+  position: relative;
+  justify-self: center;
+  width: 280px;
+  height: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .home__img {
+    width: 340px;
+    height: 340px;
+    justify-self: flex-end;
+  }
+}
+
+.home__img-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: var(--first-color);
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+  transition:
+    border-radius 0.6s ease-in-out,
+    transform 0.3s ease;
+}
+
+.home__img-wrapper:hover {
+  border-radius: 50%;
+  transform: scale(1.02);
+}
+
+.home__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}

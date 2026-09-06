@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- PAGE TITLE -->
-    <title>Antoine Rebeiz • JOBBLITZ Project</title>
+    <title>Antoine Rebeiz • JobBlitz Project</title>
 
     <!-- FAVICON -->
     <link
@@ -21,53 +21,16 @@
     />
     <link rel="stylesheet" href="vitalblood.css" />
 
+    <link rel="stylesheet" href="assets/css/jobblitz-redesign.css" />
+
     <!-- BOX ICONS -->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- INLINE STYLES FOR IMAGE SLIDER -->
-    <style>
-      .image-slider {
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        overflow: hidden;
-      }
-
-      .slider-wrapper {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-
-      .slider-wrapper img {
-        width: 100%;
-        flex-shrink: 0;
-      }
-
-      .nav-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-      }
-
-      .nav-button.prev {
-        left: 10px;
-      }
-
-      .nav-button.next {
-        right: 10px;
-      }
-    </style>
   </head>
   <body>
+    <!-- HEADER NAV -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
@@ -77,15 +40,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="/index.html" class="nav__link active-link"
-                >Brdging Brushes</a
-              >
+              <a href="/index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#projectoverview" class="nav__link">Project Overview</a>
+              <a href="#overview" class="nav__link active-link">Overview</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
               <a href="#techstack" class="nav__link">Tech Stack</a>
+            </li>
+            <li class="nav__item">
+              <a href="/index.html#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -95,187 +62,233 @@
         </div>
       </nav>
     </header>
-    <div class="bloodproject">
-      <div class="arrow-div" onclick="window.location.href='Games4Kidz.html';">
-        <h3>Next Project(Games4Kidz)</h3>
-        <img src="vitalbloodimages/arrow-right.svg" alt="" />
+
+    <main class="jobblitz-page bd-grid">
+      <!-- TOP NAVIGATION BAR -->
+      <div class="jobblitz-nav-bar">
+        <a href="justanothersmm.html" class="jobblitz-back-btn">
+          <i class="bx bx-left-arrow-alt"></i> Back: JustAnotherSMM
+        </a>
+        <a href="vitalblood.html" class="jobblitz-next-btn">
+          Next: VitalBlood <i class="bx bx-right-arrow-alt"></i>
+        </a>
       </div>
-      <div class="gradient-background">
-        <div class="topside">
-          <h1>JOBBLITZ</h1>
-          <h3>Your All-in-One Recruitment Platform</h3>
+
+      <!-- HERO SECTION -->
+      <section class="jobblitz-hero" id="overview">
+        <div class="jobblitz-hero__content">
+          <div class="jobblitz-hero__badge">
+            <i class="bx bx-briefcase-alt-2"></i> AI Job Platform
+          </div>
+          <h1 class="jobblitz-hero__title">JobBlitz</h1>
+          <p class="jobblitz-hero__subtitle">
+            An automated job matching and tracking portal designed to streamline
+            career opportunities through dynamic AI filtering and intuitive
+            tracking tools.
+          </p>
+
+          <div class="jobblitz-hero__actions">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="jobblitz-btn jobblitz-btn--primary"
+            >
+              <i class="bx bx-globe"></i> Live Application
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="jobblitz-btn jobblitz-btn--secondary"
+            >
+              <i class="bx bx-play-circle"></i> Watch Video Demo
+            </a>
+          </div>
         </div>
 
-        <!-- Image Slider Section -->
-        <div class="pilok">
-          <div class="chinok">
-            <div class="image-slider">
-              <div class="slider-wrapper">
-                <img src="vitalbloodimages/BLITZ1.png" alt="Image 1" />
-                <img src="vitalbloodimages/BLITZ2.png" alt="Image 2" />
-                <img src="vitalbloodimages/BLITZ3.png" alt="Image 3" />
-                <img src="vitalbloodimages/BLITZ4.png" alt="Image 4" />
+        <!-- MOCKUP BROWSER CAROUSEL CARD -->
+        <div class="jobblitz-hero__media">
+          <div class="jobblitz-mockup-card">
+            <div class="jobblitz-mockup-header">
+              <div class="jobblitz-mockup-dots">
+                <span></span><span></span><span></span>
               </div>
-              <button class="nav-button prev">❮</button>
-              <button class="nav-button next">❯</button>
+              <span class="jobblitz-mockup-title"
+                >JobBlitz Application Dashboard</span
+              >
             </div>
-            <div class="image212">
-              <img
-                src="vitalbloodimages/BLITZ-PHONE.png"
-                alt="Mobile Screenshot"
-              />
+
+            <div class="jobblitz-carousel" id="jobblitzCarousel">
+              <div class="jobblitz-carousel-track" id="jobblitzCarouselTrack">
+                <div class="jobblitz-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM1.png"
+                    alt="JobBlitz Screen 1"
+                  />
+                </div>
+                <div class="jobblitz-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM2.png"
+                    alt="JobBlitz Screen 2"
+                  />
+                </div>
+                <div class="jobblitz-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM3.png"
+                    alt="JobBlitz Screen 3"
+                  />
+                </div>
+                <div class="jobblitz-carousel-slide">
+                  <img
+                    src="vitalbloodimages/SMM4.png"
+                    alt="JobBlitz Screen 4"
+                  />
+                </div>
+              </div>
+              <button
+                class="jobblitz-carousel-btn jobblitz-prev"
+                id="jobblitzPrevBtn"
+                aria-label="Previous"
+              >
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button
+                class="jobblitz-carousel-btn jobblitz-next"
+                id="jobblitzNextBtn"
+                aria-label="Next"
+              >
+                <i class="bx bx-chevron-right"></i>
+              </button>
             </div>
           </div>
-          <div class="links-single">
-            <a
-              href="https://frontendjobblitz.onrender.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Deployed Link
-            </a>
-            <a
-              href="https://drive.google.com/file/d/19u-6SfINc-7pVzHPuLbMj3E4v5iYoBot/view?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Video Demo
-            </a>
+        </div>
+      </section>
+
+      <!-- KEY FEATURES GRID -->
+      <section class="jobblitz-section" id="features">
+        <h2 class="section-title">Platform Features</h2>
+        <div class="jobblitz-features-grid">
+          <div class="jobblitz-feature-card">
+            <div class="jobblitz-feature-card__icon">
+              <i class="bx bx-search-alt"></i>
+            </div>
+            <h3>Smart Job Search</h3>
+            <p>
+              Filter open listings seamlessly by skills, employment type,
+              location, and experience requirements.
+            </p>
           </div>
 
-          <div class="textblood">
+          <div class="jobblitz-feature-card">
+            <div class="jobblitz-feature-card__icon">
+              <i class="bx bx-list-check"></i>
+            </div>
+            <h3>Application Tracking</h3>
             <p>
-              JOBBLITZ is a comprehensive recruitment platform where job seekers
-              can create profiles, browse jobs, and apply, while employers can
-              post job listings and recruit top talent. Both job seekers and
-              employers have fully customizable profiles and dashboards.
+              Organize saved jobs, pending applications, and interviews in real
+              time with custom status tags.
+            </p>
+          </div>
+
+          <div class="jobblitz-feature-card">
+            <div class="jobblitz-feature-card__icon">
+              <i class="bx bx-bot"></i>
+            </div>
+            <h3>AI Recommendations</h3>
+            <p>
+              Algorithmic matching to align candidate skill sets directly with
+              targeted job opportunities.
+            </p>
+          </div>
+
+          <div class="jobblitz-feature-card">
+            <div class="jobblitz-feature-card__icon">
+              <i class="bx bx-bar-chart-alt-2"></i>
+            </div>
+            <h3>Analytics Dashboard</h3>
+            <p>
+              Monitor engagement trends, application history, and candidate
+              match rates.
             </p>
           </div>
         </div>
-        <section class="project-details" id="projectoverview">
-          <div class="description">
-            <h2>Project Overview</h2>
-            <p>
-              JOBBLITZ is designed to simplify the recruitment process for both
-              job seekers and employers. It features customizable profiles,
-              real-time job postings, and an intuitive dashboard for easy
-              management.
-            </p>
-            <p>The platform offers the following key features:</p>
-            <ul>
-              <li>
-                <strong>Job Seekers:</strong> Create a profile, browse jobs, and
-                apply directly.
-              </li>
-              <li>
-                <strong>Employers:</strong> Post jobs, view applicants, and
-                recruit top talent.
-              </li>
-              <li>
-                <strong>Customizable Profiles:</strong> Job seekers and
-                employers can fully customize their profile pages.
-              </li>
-              <li>
-                <strong>Dashboard:</strong> Manage job postings, user data, and
-                privacy policies with ease.
-              </li>
-            </ul>
-          </div>
+      </section>
 
-          <div class="stack-used" id="techstack">
-            <h2>Tech Stack</h2>
-            <ul>
-              <li>
-                <img
-                  src="./assets/img/html-5-svgrepo-com.svg"
-                  alt="HTML"
-                  class="tech-icon"
-                />
-                <span>HTML</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/css-svgrepo-com.svg"
-                  alt="CSS"
-                  class="tech-icon"
-                />
-                <span>CSS (Tailwind)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/javascript-svgrepo-com.svg"
-                  alt="JavaScript"
-                  class="tech-icon"
-                />
-                <span>JavaScript (React.js)</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/mongodb-svgrepo-com.svg"
-                  alt="MongoDB"
-                  class="tech-icon"
-                />
-                <span>MongoDB</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/express-svgrepo-com.svg"
-                  alt="Express.js"
-                  class="tech-icon"
-                />
-                <span>Express.js</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/react-svgrepo-com.svg"
-                  alt="React"
-                  class="tech-icon"
-                />
-                <span>React</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/img/nodejs-svgrepo-com.svg"
-                  alt="Node.js"
-                  class="tech-icon"
-                />
-                <span>Node.js</span>
-              </li>
-            </ul>
+      <!-- TECH STACK SHOWCASE -->
+      <section class="jobblitz-section" id="techstack">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="jobblitz-tech-grid">
+          <div class="jobblitz-tech-pill">
+            <img src="./assets/img/react-svgrepo-com.svg" alt="React" /><span
+              >React.js</span
+            >
           </div>
-        </section>
-      </div>
-    </div>
+          <div class="jobblitz-tech-pill">
+            <img src="./assets/img/nodejs-svgrepo-com.svg" alt="Node.js" /><span
+              >Node.js</span
+            >
+          </div>
+          <div class="jobblitz-tech-pill">
+            <img
+              src="./assets/img/express-svgrepo-com.svg"
+              alt="Express"
+            /><span>Express.js</span>
+          </div>
+          <div class="jobblitz-tech-pill">
+            <img
+              src="./assets/img/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            /><span>MongoDB</span>
+          </div>
+          <div class="jobblitz-tech-pill">
+            <img
+              src="./assets/img/javascript-svgrepo-com.svg"
+              alt="JavaScript"
+            /><span>JavaScript</span>
+          </div>
+          <div class="jobblitz-tech-pill">
+            <img
+              src="./assets/img/css-svgrepo-com.svg"
+              alt="Tailwind CSS"
+            /><span>Tailwind CSS</span>
+          </div>
+          <div class="jobblitz-tech-pill">
+            <img src="./assets/img/html-5-svgrepo-com.svg" alt="HTML5" /><span
+              >HTML5</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- ISOLATED CAROUSEL SCRIPT -->
     <script>
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      const sliderWrapper = document.querySelector(".slider-wrapper");
-      const images = document.querySelectorAll(".slider-wrapper img");
-      let currentIndex = 0;
+      (function () {
+        const track = document.getElementById("jobblitzCarouselTrack");
+        const prevBtn = document.getElementById("jobblitzPrevBtn");
+        const nextBtn = document.getElementById("jobblitzNextBtn");
+        const slides = document.querySelectorAll(".jobblitz-carousel-slide");
+        let currentIndex = 0;
 
-      function showSlide(index) {
-        const totalImages = images.length;
-        if (index >= totalImages) {
-          currentIndex = 0;
-        } else if (index < 0) {
-          currentIndex = totalImages - 1;
-        } else {
-          currentIndex = index;
+        function updateSlider(index) {
+          if (index >= slides.length) currentIndex = 0;
+          else if (index < 0) currentIndex = slides.length - 1;
+          else currentIndex = index;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
-        const offset = -currentIndex * 100;
-        sliderWrapper.style.transform = `translateX(${offset}%)`;
-      }
 
-      prevButton.addEventListener("click", () => {
-        showSlide(currentIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        showSlide(currentIndex + 1);
-      });
-
-      showSlide(0);
+        if (prevBtn && nextBtn && track) {
+          prevBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex - 1);
+          });
+          nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            updateSlider(currentIndex + 1);
+          });
+        }
+      })();
     </script>
     <script src="./assets/js/main.js"></script>
   </body>

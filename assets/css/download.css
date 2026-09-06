@@ -1,0 +1,117 @@
+/* ==========================================================================
+   DOWNLOAD RESUME SECTION (assets/css/download.css)
+   ========================================================================== */
+
+.download__wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.download__card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 24px rgba(14, 36, 49, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  max-width: 680px;
+  margin: 0 auto;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.download__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(14, 36, 49, 0.1);
+}
+
+.download__icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: hsl(var(--hue-color, 224), 89%, 96%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download__icon {
+  font-size: 2rem;
+  color: var(--first-color, #4070f4);
+}
+
+.download__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--second-color, #0e2431);
+  margin-bottom: 0.5rem;
+}
+
+.download__description {
+  font-size: 0.95rem;
+  color: #64748b;
+  max-width: 480px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.download__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--first-color, #4070f4);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(64, 112, 244, 0.35);
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.download__btn:hover {
+  background-color: #3158c9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(64, 112, 244, 0.45);
+}
+
+.download__btn i {
+  font-size: 1.25rem;
+}
+
+/* Tablet & Desktop Horizontal Row Layout */
+@media screen and (min-width: 650px) {
+  .download__card {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    padding: 2.25rem 2.5rem;
+    max-width: 100%;
+  }
+
+  .download__content {
+    flex: 1;
+  }
+
+  .download__description {
+    margin: 0;
+  }
+
+  .download__btn {
+    flex-shrink: 0;
+  }
+}
